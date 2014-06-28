@@ -1,0 +1,20 @@
+@mixin linkTextOffscreen($background, $width, $height) {
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    font-size: 0;
+    text-align: start;
+    background: $background;
+    width: $width;
+    height: $height;
+}
+
+@mixin titleStyle {
+	-webkit-font-smoothing: antialiased;
+	font: {
+		size: 12px;
+		weight: 900;
+	}
+	text-transform: uppercase;
+}

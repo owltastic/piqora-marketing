@@ -1,0 +1,37 @@
+/* @import "reset.scss"; */
+/* line 5, ../sass/style.scss */
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #79898d;
+}
+
+/* line 11, ../sass/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 15, ../sass/style.scss */
+.logo {
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  font-size: 0;
+  text-align: start;
+  background: url(../../img/logo-piqora.png);
+  width: 110px;
+  height: 44px;
+}
+
+/* line 20, ../sass/style.scss */
+header a {
+  color: #5d858f;
+}
+/* line 23, ../sass/style.scss */
+header ul li {
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
