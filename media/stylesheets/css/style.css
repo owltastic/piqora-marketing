@@ -1,17 +1,57 @@
-/* @import "reset.scss"; */
-/* line 5, ../sass/style.scss */
-body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-size: 100%;
-  color: #79898d;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* line 11, ../sass/style.scss */
-a {
-  text-decoration: none;
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 19, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/header.scss */
 .logo {
   text-indent: -9999px;
   overflow: hidden;
@@ -22,16 +62,156 @@ a {
   background: url(../../img/logo-piqora.png);
   width: 110px;
   height: 44px;
+  float: left;
+  margin-right: 10px;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 7, ../sass/header.scss */
+header {
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+  border-bottom: 1px solid #9a9691;
+  padding: 30px 0;
+}
+/* line 30, ../sass/mixins.scss */
+header:before, header:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 36, ../sass/mixins.scss */
+header:after {
+  clear: both;
+}
+/* line 14, ../sass/header.scss */
 header a {
   color: #5d858f;
+  display: block;
+  padding: 15px 10px;
 }
-/* line 23, ../sass/style.scss */
+/* line 19, ../sass/header.scss */
+header a:hover {
+  color: #f47c76;
+}
+/* line 25, ../sass/header.scss */
 header ul li {
   -webkit-font-smoothing: antialiased;
   font-size: 12px;
   font-weight: 900;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  float: left;
+  list-style-type: none;
+  margin: 0 0 0 10px;
+  position: relative;
+}
+/* line 32, ../sass/header.scss */
+header ul li .secondary-navigation {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  display: none;
+  left: 10px;
+  position: absolute;
+  top: 40px;
+  width: 280px;
+}
+/* line 43, ../sass/header.scss */
+header ul li .secondary-navigation li {
+  display: block;
+  float: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: none;
+}
+/* line 55, ../sass/header.scss */
+header ul li .secondary-navigation a {
+  display: block;
+  padding: 20px 20px 0 20px;
+}
+/* line 59, ../sass/header.scss */
+header ul li .secondary-navigation li:last-of-type a {
+  padding: 20px;
+}
+/* line 62, ../sass/header.scss */
+header ul li .secondary-navigation em {
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #79898d;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+/* line 72, ../sass/header.scss */
+header ul li .secondary-navigation img {
+  background: #f26a63;
+  border-radius: 100%;
+  padding: 10px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+/* line 77, ../sass/header.scss */
+header ul li .secondary-navigation:after {
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  content: "";
+  background: url(../../img/triangle-tip-top.png) no-repeat;
+  width: 15px;
+  height: 12px;
+}
+/* line 90, ../sass/header.scss */
+header ul li:hover a {
+  color: #f47c76;
+}
+/* line 93, ../sass/header.scss */
+header ul li:hover li a {
+  color: #395258;
+}
+/* line 95, ../sass/header.scss */
+header ul li:hover li a:hover {
+  color: #f47c76;
+}
+/* line 99, ../sass/header.scss */
+header ul li:hover .secondary-navigation {
+  display: block;
+}
+/* line 105, ../sass/header.scss */
+header ul.featured-navigation {
+  float: right;
+}
+/* line 111, ../sass/header.scss */
+header .main-cta {
+  background: #f26a63;
+  border: 1px solid #c11810;
+  border-bottom: 1px solid #b3160e;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 10px 15px;
+  margin: 0 10px 0 0;
+}
+
+/* line 7, ../sass/style.scss */
+body {
+  box-sizing: border-box;
+  color: #79898d;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  padding: 0 8%;
+}
+
+/* line 15, ../sass/style.scss */
+a {
+  text-decoration: none;
 }

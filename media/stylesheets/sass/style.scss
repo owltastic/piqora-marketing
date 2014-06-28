@@ -1,26 +1,17 @@
-/* @import "reset.scss"; */
-@import "variables.scss";
-@import "mixins.scss";
+@import "reset.scss";
+@import "variables";
+@import "mixins";
+
+@import "header";
 
 body {
-  font-family: $fontSans;
-  font-size: 100%;
-  color: $colorBody;
+	box-sizing: border-box;
+    color: $colorBody;
+    font-family: $fontSans;
+    font-size: 100%;
+    padding: 0 8%;
 }
 
 a {
 	text-decoration: none;
-}
-
-.logo {
-	@include linkTextOffscreen(url(../../img/logo-piqora.png),110px,44px);
-}
-
-header {
-	a {
-		color: $colorLinks;
-	}
-	ul li {
-		@include titleStyle;
-	}
 }

@@ -1,0 +1,118 @@
+.logo {
+	@include linkTextOffscreen(url(../../img/logo-piqora.png),110px,44px);
+	float: left;
+	margin-right: 10px;
+}
+
+header {
+	@include contentContainer;
+	@include clear;
+
+    border-bottom: 1px solid $colorBorders;
+	padding: 30px 0;
+
+	a {
+		color: $colorLinks;
+        display: block;
+        padding: 15px 10px;
+        
+        &:hover {
+            color: $colorAccent;
+        }
+    }
+
+	ul {
+        li {
+    		@include titleStyle;
+            float: left;
+            list-style-type: none;
+    		margin: 0 0 0 10px;
+            position: relative;
+    	
+            .secondary-navigation {
+                background: #fff;
+                border: 1px solid rgba(0,0,0,.15);
+                border-radius: 5px;
+                box-shadow: 0 1px 5px rgba(0,0,0,.15);
+                display: none;
+                left: 10px;
+                position: absolute;
+                top: 40px;
+                width: 280px;
+
+                li {
+                    display: block;
+                    float: none;
+                    font: {
+                        size: 16px;
+                        weight: 700;
+                    }
+                    line-height: 1.4em;
+                    letter-spacing: 0;
+                    margin: 0;
+                    text-transform: none;
+                }
+                a {
+                    display: block;
+                    padding: 20px 20px 0 20px;
+                }
+                li:last-of-type a {
+                    padding: 20px;
+                }
+                em {
+                    -webkit-font-smoothing: subpixel-antialiased;
+                    color: $colorBody;
+                    display: block;
+                    font: {
+                        size: 14px;
+                        style: normal;
+                        weight: 500;
+                    }
+                }
+                img {
+                    @include networkIcon (10px);
+                    float: left;
+                    margin: 0 10px 0 0;
+                }
+                &:after {
+                    display: block;
+                    position: absolute;
+                    top: -8px;
+                    left: 20px;
+                    content: "";
+                    background: url(../../img/triangle-tip-top.png) no-repeat;
+                    width: 15px;
+                    height: 12px;
+                }
+            }
+
+            &:hover {
+                a {
+                    color: $colorAccent;
+                }
+                li a {
+                    color: $colorBodyDark;
+                    &:hover {
+                        color: $colorAccent;                        
+                    }
+                }
+                .secondary-navigation {
+                    display: block;
+                }
+            }
+        }
+
+        &.featured-navigation {
+            float: right;
+        }
+
+    }
+
+    .main-cta {
+        @include mainCta;
+        margin: 0 10px 0 0;
+    }
+
+    @media screen and (max-width: 850px) {
+    }
+}
