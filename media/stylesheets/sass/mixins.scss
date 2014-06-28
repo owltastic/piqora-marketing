@@ -53,6 +53,20 @@
     padding: 10px 15px;
 }
 
+@mixin mainCtaUndo {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: $colorAccent;
+    font: {
+        size: inherit;
+        weight: inherit;
+    }
+    letter-spacing: inherit;
+    padding: inherit;
+}
+
 @mixin networkIcon ($padding) {
     background: darken($colorAccent, 4%);
     border-radius: 100%;
