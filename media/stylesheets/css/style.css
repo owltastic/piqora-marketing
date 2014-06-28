@@ -51,6 +51,9 @@ table {
   border-spacing: 0;
 }
 
+/* Text colors */
+/* Border colors */
+/* Background colors */
 /* line 1, ../sass/header.scss */
 .logo {
   text-indent: -9999px;
@@ -74,14 +77,14 @@ header {
   border-bottom: 1px solid #d8d9d9;
   padding: 30px 0;
 }
-/* line 30, ../sass/mixins.scss */
+/* line 12, ../sass/mixins.scss */
 header:before, header:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-/* line 36, ../sass/mixins.scss */
+/* line 18, ../sass/mixins.scss */
 header:after {
   clear: both;
 }
@@ -190,15 +193,16 @@ header ul.featured-navigation {
 }
 /* line 112, ../sass/header.scss */
 header .main-cta {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
   background: #f26a63;
   border: 1px solid #c11810;
   border-bottom: 1px solid #b3160e;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0;
   padding: 10px 15px;
   margin: 0 10px 0 0;
 }
@@ -247,21 +251,18 @@ header .jump-navigation {
   }
   /* line 157, ../sass/header.scss */
   header .logo {
-    float: left;
-    margin-top: 30px;
+    margin: 20px 0 15px 0;
   }
-  /* line 162, ../sass/header.scss */
+  /* line 161, ../sass/header.scss */
   header .main-navigation {
-    float: right;
-    margin-right: -10px;
-  }
-  /* line 167, ../sass/header.scss */
-  header .featured-navigation li {
     float: none;
-    text-align: right;
     margin-right: -10px;
   }
-  /* line 173, ../sass/header.scss */
+  /* line 166, ../sass/header.scss */
+  header .featured-navigation li {
+    margin-right: -10px;
+  }
+  /* line 170, ../sass/header.scss */
   header .main-cta {
     background: none;
     border: none;
@@ -272,6 +273,7 @@ header .jump-navigation {
     font-weight: inherit;
     letter-spacing: inherit;
     padding: inherit;
+    padding: 15px 10px;
   }
 }
 
@@ -281,10 +283,136 @@ body {
   color: #79898d;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
-  padding: 0 8%;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 a {
   text-decoration: none;
+}
+
+/* line 18, ../sass/style.scss */
+p {
+  font-family: Bitter, Georgia, serif;
+  font-size: 16px;
+  line-height: 1.75em;
+}
+
+/* line 22, ../sass/style.scss */
+.banner {
+  padding: 0 5%;
+  border-bottom: 1px solid #d8d9d9;
+}
+
+/* line 27, ../sass/style.scss */
+.homepage-banner {
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+  padding: 60px 0;
+}
+
+/* line 32, ../sass/style.scss */
+.banner-content {
+  width: 41.41414141%;
+  /* 410/990 */
+}
+/* line 34, ../sass/style.scss */
+.banner-content h2 {
+  -webkit-font-smoothing: antialiased;
+  color: #395258;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+/* line 37, ../sass/style.scss */
+.banner-content p {
+  font-size: 18px;
+}
+
+/* line 42, ../sass/style.scss */
+.banner-cta {
+  padding: 60px 0 10px 0;
+}
+/* line 12, ../sass/mixins.scss */
+.banner-cta:before, .banner-cta:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 18, ../sass/mixins.scss */
+.banner-cta:after {
+  clear: both;
+}
+/* line 46, ../sass/style.scss */
+.banner-cta li {
+  float: left;
+  margin-right: 3.03030303%;
+  width: 31.31313131%;
+}
+/* line 52, ../sass/style.scss */
+.banner-cta li:last-of-type {
+  margin-right: 0;
+}
+/* line 56, ../sass/style.scss */
+.banner-cta a {
+  background-color: #cce6f0;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0f0f6), to(#cce6f0));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #e0f0f6, #cce6f0);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, #e0f0f6, #cce6f0);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #e0f0f6, #cce6f0);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, #e0f0f6, #cce6f0);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, #e0f0f6, #cce6f0);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0f0f6', EndColorStr='#cce6f0');
+  border: 1px solid #a5d3e4;
+  border-bottom: 1px solid #7dbfd9;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 4px rgba(0, 0, 0, 0.2);
+  color: #5d858f;
+  line-height: 1.5em;
+  display: block;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 12, ../sass/mixins.scss */
+.banner-cta a:before, .banner-cta a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 18, ../sass/mixins.scss */
+.banner-cta a:after {
+  clear: both;
+}
+/* line 69, ../sass/style.scss */
+.banner-cta strong {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  padding-top: 11px;
+}
+/* line 75, ../sass/style.scss */
+.banner-cta em {
+  font-family: Bitter, Georgia, serif;
+  font-size: 16px;
+  line-height: 1.75em;
+}
+/* line 79, ../sass/style.scss */
+.banner-cta img {
+  border-right: 1px solid #a5d3e4;
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5);
+  float: left;
+  margin-right: 15px;
+  padding: 15px;
 }

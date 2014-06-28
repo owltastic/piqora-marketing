@@ -1,5 +1,5 @@
 .logo {
-	@include linkTextOffscreen(url(../../img/logo-piqora.png),110px,44px);
+	@include textOffscreen(url(../../img/logo-piqora.png),110px,44px);
 	float: left;
 	margin-right: 10px;
 }
@@ -23,7 +23,7 @@ header {
 
 	ul {
         li {
-    		@include titleStyle;
+    		@include subTitleStyle;
             display: block;
             float: left;
             margin: 0 0 0 10px;
@@ -155,23 +155,21 @@ header {
         padding: 10px 0;
 
         .logo {
-            float: left;
-            margin-top: 30px;
+            margin: 20px 0 15px 0;
         }
         
         .main-navigation {
-            float: right;
+            float: none;
             margin-right: -10px;
         }
 
         .featured-navigation li {
-            float: none;
-            text-align: right;
             margin-right: -10px;
         }
 
         .main-cta {
             @include mainCtaUndo;
+            padding: 15px 10px;
         }
     }
 }
