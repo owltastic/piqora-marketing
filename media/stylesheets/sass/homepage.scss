@@ -1,0 +1,178 @@
+@import "global.scss";
+
+.homepage-banner {
+    @include outerContainer;
+    background: url(../../img/banner-bg-home.png) no-repeat right bottom; 
+    background-size: 100%;
+    border-bottom: 1px solid $colorBorders;
+
+    @media screen and (min-width: 990px) {
+        background-size: auto;
+    }
+    
+    @media screen and (max-width: 650px) {
+        background-size: auto 50%;
+    }
+}
+
+.banner-content {
+    width: 41.41414141%; /* 410/990 */
+
+    h2 {
+        @include sectionHeadline;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 910px) {
+        width: 60%;
+
+        p {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+
+        p {
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 685px) {        
+        p {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        p {
+            width: 100%;
+        }
+    }
+}
+
+.banner-cta {
+    @include clear;
+    padding: $verticalSpacingLarge 0 10px 0;
+
+    li {
+        float: left;
+        margin-right: 3.03030303%; /* 30/990 */
+        width: 31.31313131%; /* 310/990 */
+    }
+
+    li:first-of-type a {
+        z-index: 1;
+    }
+
+    li:last-of-type {
+        margin-right: 0;
+    }
+
+    a {
+        @include clear;
+        @include linearGradient(adjust_color($color: $colorContentHighlight, $lightness: 5%, $alpha: -0.3),adjust_color($color: $colorContentHighlight, $alpha: -0.3));
+        border: 1px solid adjust_color($color: $colorContentHighlight, $saturation: -25%, $lightness: -15%);
+        border-bottom: 1px solid adjust_color($color: $colorContentHighlight, $saturation: -25%, $lightness: -25%);
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 1px 4px rgba(0,0,0,.15);
+        color: $colorLinks;
+        line-height: 1.5em;
+        padding: 0 15px 0 0;
+        position: relative;
+        display: block;
+        text-shadow: 0 1px 0 rgba(255,255,255,.8);
+
+        br {
+            display: none;
+        }
+
+        &:hover {
+            @include linearGradient(adjust_color($color: $colorContentHighlight, $lightness: 5%),adjust_color($color: $colorContentHighlight, $lightness: 1%));
+            color: darken($colorAccent, 12%);
+        }
+    }
+
+    strong {
+        @include calloutText;
+        -webkit-font-smoothing: antialiased;
+        display: block;
+        padding-top: 11px;
+    }
+
+    em {
+        @include bodyText;
+    }
+
+    img {
+        float: left;
+        padding: 17px 15px;
+    }
+
+    @media screen and (max-width: 930px) and (min-width: 650px) {
+        img {
+            padding: 25px 15px 30px 15px;
+        }
+        a br {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 800px) and (min-width: 650px) {
+        li {
+            margin-right: 0;
+            width: 33.33333333%; /* 240/720 */
+        }
+
+        li a {
+            border-radius: 0;
+        }
+
+        li:first-of-type a {
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        li:last-of-type a {
+            border-left: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        li {
+            float: none;
+            margin: 0 0 15px 0;
+            width: 50%;
+
+            strong {
+                display: inline-block;
+                margin-top: 5px;
+            }
+
+            em {
+                display: none;
+            }
+
+            img {
+                padding: 10px;
+                width: 12%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 525px) {
+        li {
+            width: 70%;
+            
+            strong {
+                margin-top: 0;
+            }
+        }
+    }
+}

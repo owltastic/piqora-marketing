@@ -277,7 +277,7 @@ header .jump-navigation {
   }
 }
 
-/* line 7, ../sass/style.scss */
+/* line 7, ../sass/global.scss */
 body {
   box-sizing: border-box;
   color: #79898d;
@@ -285,19 +285,19 @@ body {
   font-size: 100%;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 14, ../sass/global.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 18, ../sass/global.scss */
 p {
   font-family: Bitter, Georgia, serif;
   font-size: 16px;
   line-height: 1.75em;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 22, ../sass/global.scss */
 .container {
   margin: 0 auto;
   max-width: 990px;

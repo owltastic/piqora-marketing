@@ -277,7 +277,7 @@ header .jump-navigation {
   }
 }
 
-/* line 7, ../sass/style.scss */
+/* line 7, ../sass/global.scss */
 body {
   box-sizing: border-box;
   color: #79898d;
@@ -285,22 +285,273 @@ body {
   font-size: 100%;
 }
 
-/* line 14, ../sass/style.scss */
+/* line 14, ../sass/global.scss */
 a {
   text-decoration: none;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 18, ../sass/global.scss */
 p {
   font-family: Bitter, Georgia, serif;
   font-size: 16px;
   line-height: 1.75em;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 22, ../sass/global.scss */
 .container {
   margin: 0 auto;
   max-width: 990px;
   width: 100%;
   padding: 50px 0;
+}
+
+/* line 3, ../sass/homepage.scss */
+.homepage-banner {
+  padding: 0 5%;
+  background: url(../../img/banner-bg-home.png) no-repeat right bottom;
+  background-size: 100%;
+  border-bottom: 1px solid #d8d9d9;
+}
+@media screen and (min-width: 990px) {
+  /* line 3, ../sass/homepage.scss */
+  .homepage-banner {
+    background-size: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 3, ../sass/homepage.scss */
+  .homepage-banner {
+    background-size: auto 50%;
+  }
+}
+
+/* line 18, ../sass/homepage.scss */
+.banner-content {
+  width: 41.41414141%;
+  /* 410/990 */
+}
+/* line 21, ../sass/homepage.scss */
+.banner-content h2 {
+  -webkit-font-smoothing: antialiased;
+  color: #395258;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+/* line 24, ../sass/homepage.scss */
+.banner-content p {
+  font-size: 18px;
+}
+@media screen and (max-width: 910px) {
+  /* line 18, ../sass/homepage.scss */
+  .banner-content {
+    width: 60%;
+  }
+  /* line 31, ../sass/homepage.scss */
+  .banner-content p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 18, ../sass/homepage.scss */
+  .banner-content {
+    width: 100%;
+  }
+  /* line 39, ../sass/homepage.scss */
+  .banner-content p {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 685px) {
+  /* line 45, ../sass/homepage.scss */
+  .banner-content p {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 51, ../sass/homepage.scss */
+  .banner-content p {
+    width: 100%;
+  }
+}
+
+/* line 57, ../sass/homepage.scss */
+.banner-cta {
+  padding: 50px 0 10px 0;
+}
+/* line 12, ../sass/mixins.scss */
+.banner-cta:before, .banner-cta:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 18, ../sass/mixins.scss */
+.banner-cta:after {
+  clear: both;
+}
+/* line 61, ../sass/homepage.scss */
+.banner-cta li {
+  float: left;
+  margin-right: 3.03030303%;
+  /* 30/990 */
+  width: 31.31313131%;
+  /* 310/990 */
+}
+/* line 67, ../sass/homepage.scss */
+.banner-cta li:first-of-type a {
+  z-index: 1;
+}
+/* line 71, ../sass/homepage.scss */
+.banner-cta li:last-of-type {
+  margin-right: 0;
+}
+/* line 75, ../sass/homepage.scss */
+.banner-cta a {
+  background-color: rgba(204, 230, 240, 0.7);
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(224, 240, 246, 0.7)), to(rgba(204, 230, 240, 0.7)));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, rgba(224, 240, 246, 0.7), rgba(204, 230, 240, 0.7));
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, rgba(224, 240, 246, 0.7), rgba(204, 230, 240, 0.7));
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, rgba(224, 240, 246, 0.7), rgba(204, 230, 240, 0.7));
+  /* IE10 */
+  background-image: -o-linear-gradient(top, rgba(224, 240, 246, 0.7), rgba(204, 230, 240, 0.7));
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, rgba(224, 240, 246, 0.7), rgba(204, 230, 240, 0.7));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='rgba(224, 240, 246, 0.7)', EndColorStr='rgba(204, 230, 240, 0.7)');
+  border: 1px solid #a3c1cd;
+  border-bottom: 1px solid #82abbb;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: #5d858f;
+  line-height: 1.5em;
+  padding: 0 15px 0 0;
+  position: relative;
+  display: block;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 12, ../sass/mixins.scss */
+.banner-cta a:before, .banner-cta a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 18, ../sass/mixins.scss */
+.banner-cta a:after {
+  clear: both;
+}
+/* line 89, ../sass/homepage.scss */
+.banner-cta a br {
+  display: none;
+}
+/* line 93, ../sass/homepage.scss */
+.banner-cta a:hover {
+  background-color: #d0e8f1;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0f0f6), to(#d0e8f1));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #e0f0f6, #d0e8f1);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, #e0f0f6, #d0e8f1);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #e0f0f6, #d0e8f1);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, #e0f0f6, #d0e8f1);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(top, #e0f0f6, #d0e8f1);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0f0f6', EndColorStr='#d0e8f1');
+  color: #ef463d;
+}
+/* line 99, ../sass/homepage.scss */
+.banner-cta strong {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  padding-top: 11px;
+}
+/* line 106, ../sass/homepage.scss */
+.banner-cta em {
+  font-family: Bitter, Georgia, serif;
+  font-size: 16px;
+  line-height: 1.75em;
+}
+/* line 110, ../sass/homepage.scss */
+.banner-cta img {
+  float: left;
+  padding: 17px 15px;
+}
+@media screen and (max-width: 930px) and (min-width: 650px) {
+  /* line 116, ../sass/homepage.scss */
+  .banner-cta img {
+    padding: 25px 15px 30px 15px;
+  }
+  /* line 119, ../sass/homepage.scss */
+  .banner-cta a br {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 650px) {
+  /* line 125, ../sass/homepage.scss */
+  .banner-cta li {
+    margin-right: 0;
+    width: 33.33333333%;
+    /* 240/720 */
+  }
+  /* line 130, ../sass/homepage.scss */
+  .banner-cta li a {
+    border-radius: 0;
+  }
+  /* line 134, ../sass/homepage.scss */
+  .banner-cta li:first-of-type a {
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  /* line 140, ../sass/homepage.scss */
+  .banner-cta li:last-of-type a {
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 148, ../sass/homepage.scss */
+  .banner-cta li {
+    float: none;
+    margin: 0 0 15px 0;
+    width: 50%;
+  }
+  /* line 153, ../sass/homepage.scss */
+  .banner-cta li strong {
+    display: inline-block;
+    margin-top: 5px;
+  }
+  /* line 158, ../sass/homepage.scss */
+  .banner-cta li em {
+    display: none;
+  }
+  /* line 162, ../sass/homepage.scss */
+  .banner-cta li img {
+    padding: 10px;
+    width: 12%;
+  }
+}
+@media screen and (max-width: 525px) {
+  /* line 170, ../sass/homepage.scss */
+  .banner-cta li {
+    width: 70%;
+  }
+  /* line 173, ../sass/homepage.scss */
+  .banner-cta li strong {
+    margin-top: 0;
+  }
 }
