@@ -96,7 +96,7 @@ header a {
 }
 /* line 19, ../sass/header.scss */
 header a:hover {
-  color: #f47c76;
+  color: #f26961;
 }
 /* line 25, ../sass/header.scss */
 header ul li {
@@ -154,7 +154,7 @@ header ul li .secondary-navigation em {
 }
 /* line 73, ../sass/header.scss */
 header ul li .secondary-navigation img {
-  background: #f26a63;
+  background: #f26961;
   border-radius: 100%;
   padding: 10px;
   float: left;
@@ -173,7 +173,7 @@ header ul li .secondary-navigation:after {
 }
 /* line 91, ../sass/header.scss */
 header ul li:hover a {
-  color: #f47c76;
+  color: #f26961;
 }
 /* line 94, ../sass/header.scss */
 header ul li:hover li a {
@@ -181,7 +181,7 @@ header ul li:hover li a {
 }
 /* line 96, ../sass/header.scss */
 header ul li:hover li a:hover {
-  color: #f47c76;
+  color: #f26961;
 }
 /* line 100, ../sass/header.scss */
 header ul li:hover .secondary-navigation {
@@ -197,9 +197,9 @@ header .main-cta {
   font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
-  background: #f26a63;
-  border: 1px solid #c11810;
-  border-bottom: 1px solid #b3160e;
+  background: #f26961;
+  border: 1px solid #ac170e;
+  border-bottom: 1px solid #9e150d;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -268,7 +268,7 @@ header .jump-navigation {
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: #f47c76;
+    color: #f26961;
     font-size: inherit;
     font-weight: inherit;
     letter-spacing: inherit;

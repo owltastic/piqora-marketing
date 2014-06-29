@@ -69,7 +69,7 @@ header {
     display: block;
     padding: 15px 10px; }
     header a:hover {
-      color: #f47c76; }
+      color: #f26961; }
   header ul li {
     -webkit-font-smoothing: antialiased;
     font-size: 12px;
@@ -113,7 +113,7 @@ header {
         font-style: normal;
         font-weight: 500; }
       header ul li .secondary-navigation img {
-        background: #f26a63;
+        background: #f26961;
         border-radius: 100%;
         padding: 10px;
         float: left;
@@ -128,11 +128,11 @@ header {
         width: 15px;
         height: 12px; }
     header ul li:hover a {
-      color: #f47c76; }
+      color: #f26961; }
     header ul li:hover li a {
       color: #395258; }
       header ul li:hover li a:hover {
-        color: #f47c76; }
+        color: #f26961; }
     header ul li:hover .secondary-navigation {
       display: block; }
   header ul.featured-navigation {
@@ -142,9 +142,9 @@ header {
     font-weight: 700;
     letter-spacing: 0;
     text-transform: uppercase;
-    background: #f26a63;
-    border: 1px solid #c11810;
-    border-bottom: 1px solid #b3160e;
+    background: #f26961;
+    border: 1px solid #ac170e;
+    border-bottom: 1px solid #9e150d;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     color: #fff;
@@ -185,7 +185,7 @@ header {
         border: none;
         border-radius: 0;
         box-shadow: none;
-        color: #f47c76;
+        color: #f26961;
         font-size: inherit;
         font-weight: inherit;
         letter-spacing: inherit;
@@ -219,7 +219,7 @@ p {
   border-bottom: 1px solid #d8d9d9; }
   @media screen and (min-width: 990px) {
     .homepage-banner {
-      background-size: auto; } }
+      background-size: auto 85%; } }
   @media screen and (max-width: 650px) {
     .homepage-banner {
       background-size: auto 50%; } }
@@ -322,7 +322,7 @@ p {
       /* Opera 11.10+ */
       background-image: linear-gradient(top, #e0f0f6, #d0e8f1);
       filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0f0f6', EndColorStr='#d0e8f1');
-      color: #ef463d; }
+      color: #f26961; }
   .banner-cta strong {
     font-size: 16px;
     font-weight: 700;
@@ -376,3 +376,114 @@ p {
       width: 70%; }
       .banner-cta li strong {
         margin-top: 0; } }
+
+.homepage-customers {
+  padding: 0 5%;
+  background: #f2f1f0; }
+  .homepage-customers h2 {
+    -webkit-font-smoothing: antialiased;
+    color: #395258;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4375em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    width: 75%; }
+    .homepage-customers h2 a {
+      color: #f0574e; }
+    @media screen and (max-width: 895px) {
+      .homepage-customers h2 {
+        width: 100%; } }
+  .homepage-customers .logos {
+    border-bottom: 1px solid #d8d9d9;
+    border-top: 1px solid #d8d9d9;
+    display: table;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    width: 100%; }
+    .homepage-customers .logos:before, .homepage-customers .logos:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .homepage-customers .logos:after {
+      clear: both; }
+    @media screen and (max-width: 760px) {
+      .homepage-customers .logos {
+        padding: 10px 0; } }
+  .homepage-customers ul {
+    display: table-cell; }
+    @media screen and (max-width: 760px) {
+      .homepage-customers ul {
+        display: table;
+        width: 100%; } }
+  @media screen and (min-width: 760px) {
+    .homepage-customers ul:first-of-type li:first-of-type {
+      padding-left: 0; }
+    .homepage-customers ul:last-of-type li:last-of-type {
+      padding-right: 0; } }
+  .homepage-customers li {
+    display: table-cell;
+    padding: 0 15px;
+    vertical-align: middle; }
+    .homepage-customers li img {
+      width: 100%; }
+    @media screen and (max-width: 895px) {
+      .homepage-customers li {
+        padding: 0 10px; } }
+    @media screen and (max-width: 760px) {
+      .homepage-customers li {
+        padding: 10px 5%; } }
+    @media screen and (max-width: 490px) {
+      .homepage-customers li {
+        padding: 10px 2%; } }
+
+.testimonials:before, .testimonials:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+.testimonials:after {
+  clear: both; }
+.testimonials blockquote {
+  width: 45.45454545%;
+  /* 450/990 */ }
+  .testimonials blockquote:first-of-type {
+    float: left; }
+    @media screen and (max-width: 560px) {
+      .testimonials blockquote:first-of-type {
+        margin-bottom: 50px; } }
+  .testimonials blockquote:last-of-type {
+    float: right; }
+  @media screen and (max-width: 560px) {
+    .testimonials blockquote {
+      float: none;
+      width: 100%; } }
+.testimonials p {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.4em; }
+  @media screen and (max-width: 740px) {
+    .testimonials p {
+      font-size: 20px; } }
+.testimonials p::first-letter {
+  margin-left: -10px; }
+.testimonials cite {
+  font-size: 14px;
+  display: block;
+  line-height: 1.5em;
+  margin-top: 30px; }
+  .testimonials cite img {
+    border-radius: 100%;
+    float: left;
+    margin-right: 25px; }
+    @media screen and (max-width: 560px) {
+      .testimonials cite img {
+        margin-top: -5px;
+        width: 40px; } }
+  @media screen and (max-width: 740px) {
+    .testimonials cite br {
+      display: none; } }

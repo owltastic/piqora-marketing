@@ -33,7 +33,7 @@
 
 @mixin mainCta {
     @include calloutText;
-    background: darken($colorAccent, 4%);
+    background: $colorAccent;
     border: 1px solid darken($colorAccent, 30%);
     border-bottom: 1px solid darken($colorAccent, 33%);
     border-radius: 5px;
@@ -57,7 +57,7 @@
 }
 
 @mixin networkIcon ($padding) {
-    background: darken($colorAccent, 4%);
+    background: $colorAccent;
     border-radius: 100%;
     padding: ($padding);
 }
@@ -99,14 +99,26 @@
     text-transform: uppercase;
 }
 
-@mixin sectionHeadline {
+@mixin sectionHeadline($color) {
     -webkit-font-smoothing: antialiased;
-    color: $colorBodyDark;
+    color: $color;
     font: {
         size: 42px;
         weight: 700;
     }
     line-height: 1.15em;
+    letter-spacing: -1px;
+    margin-bottom: $verticalSpacingMedium;
+}
+
+@mixin sectionSubHeadline($color) {
+    -webkit-font-smoothing: antialiased;
+    color: $color;
+    font: {
+        size: 32px;
+        weight: 700;
+    }
+    line-height: 1.4375em;
     letter-spacing: -1px;
     margin-bottom: $verticalSpacingMedium;
 }
