@@ -83,6 +83,9 @@
         img {
             padding: 25px 15px 30px 15px;
         }
+        a {
+            padding-bottom: 12px;
+        }
         a br {
             display: block;
         }
@@ -405,7 +408,7 @@
         }
 
         a:hover img {
-           background-color: $colorBodyDark;
+            background-color: $colorBodyDark;
         }
     }
 }
@@ -461,9 +464,8 @@
             }
 
             em {
-                @include calloutText;
+                @include calloutText(#fff);
                 -webkit-font-smoothing: antialiased;
-                color: #fff;
                 display: block;
                 
                 @media screen and (max-width: 805px) {
@@ -513,5 +515,56 @@
         padding: 20px;
         text-align: center;
     }
+}
 
+.feature-overview {
+    @include outerContainer;
+
+    .container {
+        padding: 0;
+    }
+
+    h3 {
+        @include sectionSubHeadline($colorBodyAlt);
+        border-bottom: 1px solid $colorBorders;
+        margin: $verticalSpacingLarge 0;
+        padding: 0 0 $verticalSpacingLarge 0;
+        text-align: center;
+    }
+    ul {
+        @include clear;
+        margin-bottom: $verticalSpacingLarge;
+
+        @media screen and (max-width: 785px) {
+            margin-bottom: $verticalSpacingMedium;
+        }
+    }
+    li {
+        float: left;
+        margin-right: 4.545454545%;
+        width: 30.3030303%;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+        
+        @media screen and (max-width: 785px) {
+            float: none;
+            margin-bottom: $verticalSpacingMedium;
+            width: 100%;
+        }
+    }
+    h4 {
+        @include calloutText($colorBodyDark);
+        line-height: 1.5em;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 785px) {
+            margin-bottom: 5px;
+        }
+    }
+    img {
+        margin-left: -2px;
+        width: 100%;
+    }
 }
