@@ -6,23 +6,28 @@
     background-size: 100%;
     border-bottom: 1px solid $colorBorders;
 
-    @media screen and (min-width: 990px) {
+    h2 {
+        @include sectionHeadline($colorBodyDark);
+        
+        em {
+            color: lighten($colorBodyDark,10%);
+        }
+    }
+
+    @media screen and (min-width: 1050px) {
         background-size: auto 85%;
     }
     
     @media screen and (max-width: 650px) {
-        background-size: auto 50%;
+        background-size: auto 40%;
     }
 }
 
 .banner-content {
-    width: 41.41414141%; /* 410/990 */
+    width: 34.34343434%; /* 340/990 */
 
-    h2 {
-        @include sectionHeadline($colorBodyDark);
-    }
     p {
-        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     @media screen and (max-width: 910px) {
@@ -54,7 +59,7 @@
 
 .banner-cta {
     @include clear;
-    padding: $verticalSpacingLarge 0 10px 0;
+    padding: $verticalSpacingMedium 0 10px 0;
 
     li {
         float: left;
@@ -246,10 +251,11 @@
     }
 
     p {
-        -webkit-font-smoothing: antialiased;
+        color: $colorBodyDark;
         font: { 
             family: $fontSans;
             size: 24px;
+            weight: 300;
         }
         line-height: 1.4em;
 
@@ -317,7 +323,7 @@
     .feature-image {
         float: left;
         margin-top: 15px;
-        width: 58.78787879%;
+        width: 59.39393939%; /* 588/990 */
     }
 
     .feature .feature-image {
