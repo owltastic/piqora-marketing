@@ -1,5 +1,5 @@
 .logo {
-	@include textOffscreen(url(../../img/logo-piqora.png),110px,44px);
+	@include textOffscreen(url(../img/logo-piqora.png),110px,44px);
 	float: left;
 	margin-right: 10px;
 }
@@ -84,7 +84,7 @@ header {
                     top: -8px;
                     left: 20px;
                     content: "";
-                    background: url(../../img/triangle-tip-top.png) no-repeat;
+                    background: url(../img/triangle-tip-top.png) no-repeat;
                     width: 15px;
                     height: 12px;
                 }

@@ -1,8 +1,8 @@
-@import "global.scss";
+@import "base.scss";
 
 .homepage-banner {
     @include outerContainer;
-    background: url(../../img/banner-bg-home.png) no-repeat right bottom; 
+    background: url(../img/banner-bg-home.png) no-repeat right bottom; 
     background-size: 100%;
     border-bottom: 1px solid $colorBorders;
 
@@ -421,7 +421,7 @@
 
 .major-results {
     @include outerContainer;
-    background: #759395 url(../../img/bg-major-results.png);
+    background: #759395 url(../img/bg-major-results.png);
     background-size:cover;
     border-top: 1px solid rgba(0,0,0,.3);
 
