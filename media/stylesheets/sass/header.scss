@@ -30,10 +30,10 @@ header {
             position: relative;
     	
             .secondary-navigation {
-                background: #fff;
+                @include borderRadius(5px);
+                background-color: #fff;
                 border: 1px solid rgba(0,0,0,.15);
                 border-bottom: 1px solid rgba(0,0,0,.18);
-                border-radius: 5px;
                 box-shadow: 0 0 5px rgba(0,0,0,.15);
                 display: none;
                 left: 10px;
@@ -46,7 +46,7 @@ header {
                     float: none;
                     font: {
                         size: 16px;
-                        weight: 500;
+                        weight: 600;
                     }
                     line-height: 1.4em;
                     letter-spacing: 0;
@@ -75,6 +75,9 @@ header {
                     float: left;
                     margin: 0 10px 0 0;
                 }
+                a:hover img {
+                    background-color: $colorBodyDark;
+                }
                 &:after {
                     display: block;
                     position: absolute;
@@ -92,9 +95,9 @@ header {
                     color: $colorAccent;
                 }
                 li a {
-                    color: $colorBodyDark;
+                    color: $colorAccent;
                     &:hover {
-                        color: $colorAccent;                        
+                        color: $colorBodyDark;                        
                     }
                 }
                 .secondary-navigation {

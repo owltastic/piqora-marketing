@@ -2,7 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-@import "header.scss";
+@import "header";
 
 body {
 	box-sizing: border-box;
@@ -13,6 +13,11 @@ body {
 
 a {
 	text-decoration: none;
+    color: $colorAccent;
+    
+    &:hover {
+        color: $colorBodyDark;
+    }
 }
 
 p {
