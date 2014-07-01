@@ -4,9 +4,12 @@
 @import "base/_variables.scss";
 @import "base/_global.scss";
 
-@import "partials/_forms.scss";
 @import "partials/_header.scss";
+@import "partials/_forms.scss";
+@import "partials/_feature-highlights.scss";
+@import "partials/_feature-overview.scss";
 @import "partials/_footer.scss";
 
 
 @import "pages/_homepage.scss";
+@import "pages/_pinterest.scss";

@@ -50,7 +50,7 @@ footer {
         }
     }
 
-    h4 {
+    h6 {
         @include subTitleStyle;
         border-bottom: 1px solid $colorBorders;
         color: #ada9a5;
@@ -79,7 +79,7 @@ footer {
             float: left;
         }
         img {
-            @include networkIcon(10px);
+            @include iconContainer(10px,$colorAccent);
             margin-right: 10px;
         }
 

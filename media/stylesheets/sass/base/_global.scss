@@ -1,8 +1,11 @@
 body {
-	box-sizing: border-box;
     color: $colorBody;
     font-family: $fontSans;
     font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 a {
@@ -14,6 +17,30 @@ a {
     }
 }
 
+h2 {
+    @include sectionHeadline($colorBodyAlt);
+    line-height: 1.2857142857em;
+}
+
+h3 {
+    @include sectionSubHeadline($colorBodyDark);
+}
+
+h4 {
+    color: $colorBodyAlt;
+    font: {
+        family: $fontSerif;
+        size: 20px;
+    }
+    line-height: 1.75em;
+}
+
+h5 {
+    @include calloutText($colorBodyDark);
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
 p {
     @include bodyText;
 }
@@ -21,4 +48,8 @@ p {
 .container {
     @include contentContainer;
     padding: $verticalSpacingLarge 0;
+}
+
+.clear {
+    @include clear;
 }

@@ -5,7 +5,7 @@
     border-bottom: 1px solid $colorBorders;
 
     h2 {
-        @include sectionHeadline($colorBodyDark);
+        color: $colorBodyDark;
         
         em {
             color: lighten($colorBodyDark,10%);
@@ -154,8 +154,7 @@
     @include outerContainer;
     background-color: $colorContentAlternate;
 
-    h2 {
-        @include sectionSubHeadline($colorBodyDark);
+    h3 {
         margin: 0 auto $verticalSpacingLarge auto;
         text-align: center;
         width: 75%;
@@ -291,132 +290,6 @@
     }
 }
 
-.features-highlight {
-    @include outerContainer;
-    border-top: 1px solid $colorBorders;
-
-    h2 {
-        @include sectionHeadline($colorBodyAlt);
-        line-height: 1.2857142857em;
-        margin-bottom: $verticalSpacingLarge;
-    }
-
-    .feature {
-        @include clear;
-        border-top: 1px solid $colorBorders;
-        padding: $verticalSpacingLarge 0;
-    }
-
-    .promotions {
-        padding-bottom: 0;
-
-        .feature-image {
-            float: right;
-        }
-        .feature-content {
-            float: left;
-        }
-    }
-
-    .feature-image {
-        float: left;
-        margin-top: 15px;
-        width: 59.39393939%; /* 588/990 */
-    }
-
-    .feature .feature-image {
-        @media screen and (max-width: 965px) {
-            width: 50%;
-        }
-
-        @media screen and (max-width: 800px) {
-            display: block;
-            float: none;
-            margin: 0 auto;
-            width: 80.83333333%;
-        }
-
-        @media screen and (max-width: 580px) {
-            width: 100%;
-        }
-    }
-    
-    .feature-content {
-        float: right;
-        width: 34.34343434%;
-
-        @media screen and (max-width: 965px) {
-            width: 42.0023015%; /* 365/869 */
-        }
-
-        @media screen and (max-width: 800px) {
-            margin-top: $verticalSpacingLarge;
-            width: 100%;
-        }
-    }
-
-    .feature-description {
-        @media screen and (max-width: 800px) {
-            float: left;
-            width: 47%;
-        }
-
-        @media screen and (max-width: 580px) {
-            float: none;
-            width: 100%;
-        }
-    }
-
-    ul {
-        @media screen and (max-width: 800px) {
-            float: right;
-            width: 47%;
-        } 
-
-        @media screen and (max-width: 580px) {
-            float: none;
-            width: 100%;
-        }   
-    }
-
-    h3 {
-        @include sectionSubHeadline($colorBodyDark);
-
-        @media screen and (max-width: 580px) {
-            margin-bottom: 10px;
-        }
-    }
-
-    p {
-        margin-bottom: $verticalSpacingLarge;
-
-        @media screen and (max-width: 800px) {
-            margin-bottom: 0;
-        }
-
-        @media screen and (max-width: 580px) {
-            margin-bottom: $verticalSpacingMedium;
-        }
-    }
-
-    li {
-        @include clear;
-        display: block;
-        line-height: 1.3em;
-        margin: 15px 0;
-
-        img {
-            @include networkIcon(5px);
-            float: left;
-            margin: -5px 10px 0 0;
-        }
-
-        a:hover img {
-            background-color: $colorBodyDark;
-        }
-    }
-}
-
 .major-results {
     @include outerContainer;
     background: #759395 url(../img/bg-major-results.png);
@@ -424,7 +297,7 @@
     border-top: 1px solid rgba(0,0,0,.3);
 
     h2 {
-        @include sectionHeadline(darken($colorBodyDark,7%));
+        color:darken($colorBodyDark,7%);
         text-shadow: 0 1px 0 rgba(255,255,255,.3);
     }
 
@@ -518,57 +391,5 @@
         margin-top: $verticalSpacingLarge;
         padding: 20px;
         text-align: center;
-    }
-}
-
-.feature-overview {
-    @include outerContainer;
-
-    .container {
-        padding: 0;
-    }
-
-    h3 {
-        @include sectionSubHeadline($colorBodyAlt);
-        border-bottom: 1px solid $colorBorders;
-        margin: $verticalSpacingLarge 0;
-        padding: 0 0 $verticalSpacingLarge 0;
-        text-align: center;
-    }
-    ul {
-        @include clear;
-        margin-bottom: $verticalSpacingLarge;
-
-        @media screen and (max-width: 785px) {
-            margin-bottom: $verticalSpacingMedium;
-        }
-    }
-    li {
-        float: left;
-        margin-right: 4.545454545%;
-        width: 30.3030303%;
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-        
-        @media screen and (max-width: 785px) {
-            float: none;
-            margin-bottom: $verticalSpacingMedium;
-            width: 100%;
-        }
-    }
-    h4 {
-        @include calloutText($colorBodyDark);
-        line-height: 1.5em;
-        margin-bottom: 20px;
-
-        @media screen and (max-width: 785px) {
-            margin-bottom: 5px;
-        }
-    }
-    img {
-        margin-left: -2px;
-        width: 100%;
     }
 }
