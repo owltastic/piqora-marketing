@@ -1,0 +1,24 @@
+body {
+	box-sizing: border-box;
+    color: $colorBody;
+    font-family: $fontSans;
+    font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+    color: $colorAccent;
+    
+    &:hover {
+        color: $colorBodyDark;
+    }
+}
+
+p {
+    @include bodyText;
+}
+
+.container {
+    @include contentContainer;
+    padding: $verticalSpacingLarge 0;
+}
