@@ -1301,25 +1301,11 @@ footer {
     padding: 20px;
     text-align: center; }
 
-.pinterest-banner {
-  padding: 0 5%;
-  background: url(../img/banner-bg-pinterest.jpg) no-repeat right bottom;
-  background-size: auto 100%; }
-  @media screen and (min-width: 1100px) {
-    .pinterest-banner {
-      background: url(../img/banner-bg-pinterest.jpg) no-repeat right bottom;
-      background-size: auto 130%; } }
-  @media screen and (max-width: 785px) {
-    .pinterest-banner {
-      background: url(../img/banner-bg-pinterest.jpg) no-repeat 85% top;
-      background-size: auto 110%; } }
-  @media screen and (max-width: 590px) {
-    .pinterest-banner {
-      background: url(../img/banner-bg-pinterest.jpg) no-repeat 55% bottom;
-      background-size: auto 110%; } }
-  .pinterest-banner .container {
+.product-banner {
+  padding: 0 5%; }
+  .product-banner .container {
     padding-bottom: 0; }
-  .pinterest-banner h2 {
+  .product-banner h2 {
     -webkit-font-smoothing: antialiased;
     color: #395258;
     font-size: 32px;
@@ -1329,239 +1315,257 @@ footer {
     margin-bottom: 30px;
     font-size: 36px;
     margin-bottom: 10px;
-    text-align: center;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); }
-    .pinterest-banner h2 em {
-      color: #4d6f77; }
-    @media screen and (max-width: 990px) and (min-width: 685px) {
-      .pinterest-banner h2 {
-        margin: 0 auto 30px auto;
-        width: 80%; } }
-  .pinterest-banner p {
-    color: rgba(0, 0, 0, 0.5);
+  .product-banner p {
     font-size: 20px;
-    text-align: center;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
-    @media screen and (max-width: 505px) {
-      .pinterest-banner p {
-        font-size: 18px; } }
-  .pinterest-banner .demo-cta {
+  .product-banner .product-steps {
     border-radius: 5px;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
-    color: #f26961;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Fallback Color */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5)));
-    /* Saf4+, Chrome */
-    background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-    /* Chrome 10+, Saf5.1+, iOS 5+ */
-    background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-    /* FF3.6 */
-    background-image: -ms-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-    /* IE10 */
-    background-image: -o-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-    /* Opera 11.10+ */
-    background-image: linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='rgba(255, 255, 255, 0.5)');
-    -webkit-font-smoothing: antialiased;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 50px auto 30px auto;
-    padding: 30px 3.03030303%;
-    /* 30/990 */
-    text-align: center;
-    width: 41.41414141%;
-    /* 410/990 */ }
-    .pinterest-banner .demo-cta:before, .pinterest-banner .demo-cta:after {
+    margin: 70px 0 30px 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
+    .product-banner .product-steps:before, .product-banner .product-steps:after {
       content: "\0020";
       display: block;
       height: 0;
       overflow: hidden; }
-    .pinterest-banner .demo-cta:after {
+    .product-banner .product-steps:after {
       clear: both; }
-    .pinterest-banner .demo-cta strong {
-      float: left; }
-    .pinterest-banner .demo-cta img {
-      border-radius: 100%;
-      background-color: #f26961;
-      padding: 10px;
-      float: right;
-      margin: -10px 0; }
-      .pinterest-banner .demo-cta img:hover {
-        background-color: #395258; }
-    .pinterest-banner .demo-cta:hover {
-      color: #395258; }
-      .pinterest-banner .demo-cta:hover img {
-        background-color: #395258; }
-    @media screen and (max-width: 855px) {
-      .pinterest-banner .demo-cta {
-        width: 50.64935065%; } }
-    @media screen and (max-width: 685px) {
-      .pinterest-banner .demo-cta {
-        padding: 30px 4.379562044%;
-        /* 30/685 */
-        width: 60%; } }
-    @media screen and (max-width: 600px) {
-      .pinterest-banner .demo-cta {
-        width: 80%; } }
     @media screen and (max-width: 500px) {
-      .pinterest-banner .demo-cta {
-        width: 100%; } }
-
-.product-steps {
-  border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  margin: 70px 0 30px 0;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
-  .product-steps:before, .product-steps:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .product-steps:after {
-    clear: both; }
-  @media screen and (max-width: 500px) {
-    .product-steps {
-      display: table; } }
-  .product-steps li {
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-right: none;
-    display: table;
-    float: left;
-    position: relative;
-    vertical-align: middle;
-    width: 25%; }
-    .product-steps li.step-one {
-      background: rgba(255, 255, 255, 0.8);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px; }
-      .product-steps li.step-one:hover {
-        background: white; }
-      @media screen and (max-width: 760px) {
-        .product-steps li.step-one {
-          border-bottom-left-radius: 0;
-          border-bottom: none; } }
-    .product-steps li.step-two {
-      background: rgba(243, 242, 241, 0.9);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
-      .product-steps li.step-two:hover {
-        background: #f3f2f1; }
-      @media screen and (max-width: 760px) {
-        .product-steps li.step-two {
-          border-top-right-radius: 5px;
-          border-right: 1px solid rgba(0, 0, 0, 0.3);
-          border-bottom: none; } }
-    .product-steps li.step-three {
-      background: rgba(196, 210, 215, 0.85);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.6); }
-      .product-steps li.step-three:hover {
-        background: #c4d2d7; }
-      @media screen and (max-width: 760px) {
-        .product-steps li.step-three {
-          border-bottom-left-radius: 5px; } }
-    .product-steps li.step-four {
-      background: rgba(149, 180, 186, 0.8);
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      border-right: 1px solid rgba(0, 0, 0, 0.3); }
-      .product-steps li.step-four:hover {
-        background: #95b4ba;
-        border: 1px solid rgba(0, 0, 0, 0.6); }
-      @media screen and (max-width: 760px) {
-        .product-steps li.step-four {
-          border-top-right-radius: 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.6); } }
-    @media screen and (max-width: 760px) {
-      .product-steps li {
-        width: 50%; } }
-    .product-steps li.step-one, .product-steps li.step-two, .product-steps li.step-three, .product-steps li.step-four {
+      .product-banner .product-steps {
+        display: table; } }
+    .product-banner .product-steps li {
       -webkit-background-clip: padding-box;
       -moz-background-clip: padding;
-      background-clip: padding-box; }
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-right: none;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      display: table;
+      float: left;
+      position: relative;
+      vertical-align: middle;
+      width: 25%; }
+      .product-banner .product-steps li.step-one {
+        background: rgba(255, 255, 255, 0.8);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        .product-banner .product-steps li.step-one:hover {
+          background: white; }
+        @media screen and (max-width: 760px) {
+          .product-banner .product-steps li.step-one {
+            border-bottom-left-radius: 0;
+            border-bottom: none; } }
+      .product-banner .product-steps li.step-two {
+        background: rgba(243, 242, 241, 0.9);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+        .product-banner .product-steps li.step-two:hover {
+          background: #f3f2f1; }
+        @media screen and (max-width: 760px) {
+          .product-banner .product-steps li.step-two {
+            border-top-right-radius: 5px;
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+            border-bottom: none; } }
+      .product-banner .product-steps li.step-three {
+        background: rgba(196, 210, 215, 0.85);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6); }
+        .product-banner .product-steps li.step-three:hover {
+          background: #c4d2d7; }
+        @media screen and (max-width: 760px) {
+          .product-banner .product-steps li.step-three {
+            border-bottom-left-radius: 5px; } }
+      .product-banner .product-steps li.step-four {
+        background: rgba(149, 180, 186, 0.8);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-right: 1px solid rgba(0, 0, 0, 0.3); }
+        .product-banner .product-steps li.step-four:hover {
+          background: #95b4ba;
+          border: 1px solid rgba(0, 0, 0, 0.6); }
+        @media screen and (max-width: 760px) {
+          .product-banner .product-steps li.step-four {
+            border-top-right-radius: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.6); } }
+      @media screen and (max-width: 760px) {
+        .product-banner .product-steps li {
+          width: 50%; } }
+      .product-banner .product-steps li.step-one, .product-banner .product-steps li.step-two, .product-banner .product-steps li.step-three, .product-banner .product-steps li.step-four {
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box; }
+        @media screen and (max-width: 500px) {
+          .product-banner .product-steps li.step-one, .product-banner .product-steps li.step-two, .product-banner .product-steps li.step-three, .product-banner .product-steps li.step-four {
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-bottom: none;
+            border-radius: 0;
+            width: 100%; } }
       @media screen and (max-width: 500px) {
-        .product-steps li.step-one, .product-steps li.step-two, .product-steps li.step-three, .product-steps li.step-four {
-          border: 1px solid rgba(0, 0, 0, 0.4);
-          border-bottom: none;
-          border-radius: 0;
+        .product-banner .product-steps li.step-one {
+          border-top-left-radius: 6px;
+          border-top-right-radius: 6px; } }
+      @media screen and (max-width: 500px) {
+        .product-banner .product-steps li.step-four {
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5); } }
+    .product-banner .product-steps a {
+      color: #395258;
+      display: table-cell;
+      height: 100px;
+      line-height: 1.375em;
+      padding: 0 30px 0 40px;
+      vertical-align: middle;
+      width: 100%; }
+      .product-banner .product-steps a:hover {
+        color: #11181a; }
+        .product-banner .product-steps a:hover span:not(.restart) {
+          background: #f26961; }
+      @media screen and (max-width: 855px) {
+        .product-banner .product-steps a {
+          height: 130px; } }
+      @media screen and (max-width: 760px) {
+        .product-banner .product-steps a {
+          height: 90px; } }
+      @media screen and (max-width: 500px) {
+        .product-banner .product-steps a {
           width: 100%; } }
-    @media screen and (max-width: 500px) {
-      .product-steps li.step-one {
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px; } }
-    @media screen and (max-width: 500px) {
-      .product-steps li.step-four {
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5); } }
-  .product-steps a {
-    color: #395258;
-    display: table-cell;
-    height: 100px;
-    line-height: 1.375em;
-    padding: 0 30px 0 40px;
-    vertical-align: middle;
-    width: 100%; }
-    .product-steps a:hover {
-      color: #11181a; }
-      .product-steps a:hover span:not(.restart) {
-        background: #f26961; }
-    @media screen and (max-width: 855px) {
-      .product-steps a {
-        height: 130px; } }
-    @media screen and (max-width: 760px) {
-      .product-steps a {
-        height: 90px; } }
-    @media screen and (max-width: 500px) {
-      .product-steps a {
-        width: 100%; } }
-  .product-steps span {
-    border-radius: 100%;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    background: #395258;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
-    height: 40px;
-    left: -20px;
-    margin-top: -20px;
-    padding-top: 7px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 40px; }
-    .product-steps span.restart {
-      left: auto;
-      right: -20px; }
+    .product-banner .product-steps span {
+      border-radius: 100%;
+      -webkit-background-clip: padding-box;
+      -moz-background-clip: padding;
+      background-clip: padding-box;
+      background: #395258;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      height: 40px;
+      left: -20px;
+      margin-top: -20px;
+      padding-top: 7px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 40px; }
+      .product-banner .product-steps span.restart {
+        left: auto;
+        right: -20px; }
+  .product-banner .content-frame {
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
+    height: 56px;
+    margin: 60px 0 -30px 4px;
+    position: relative;
+    width: 99.19191919%; }
+    .product-banner .content-frame img {
+      left: -4px;
+      position: absolute;
+      top: -1px; }
+      .product-banner .content-frame img:last-of-type {
+        left: auto;
+        right: -4px; }
+  .product-banner.pinterest-banner {
+    background: url(../img/banner-bg-pinterest.jpg) no-repeat right bottom;
+    background-size: auto 100%; }
+    @media screen and (min-width: 1100px) {
+      .product-banner.pinterest-banner {
+        background: url(../img/banner-bg-pinterest.jpg) no-repeat right bottom;
+        background-size: auto 130%; } }
+    @media screen and (max-width: 785px) {
+      .product-banner.pinterest-banner {
+        background: url(../img/banner-bg-pinterest.jpg) no-repeat 85% top;
+        background-size: auto 110%; } }
+    @media screen and (max-width: 590px) {
+      .product-banner.pinterest-banner {
+        background: url(../img/banner-bg-pinterest.jpg) no-repeat 55% bottom;
+        background-size: auto 110%; } }
+    .product-banner.pinterest-banner h2 {
+      text-align: center; }
+      .product-banner.pinterest-banner h2 em {
+        color: #4d6f77; }
+      @media screen and (max-width: 990px) and (min-width: 685px) {
+        .product-banner.pinterest-banner h2 {
+          margin: 0 auto 30px auto;
+          width: 80%; } }
+    .product-banner.pinterest-banner p {
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center; }
+      @media screen and (max-width: 505px) {
+        .product-banner.pinterest-banner p {
+          font-size: 18px; } }
+    .product-banner.pinterest-banner .demo-cta {
+      border-radius: 5px;
+      -webkit-background-clip: padding-box;
+      -moz-background-clip: padding;
+      background-clip: padding-box;
+      color: #f26961;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0.5);
+      /* Fallback Color */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5)));
+      /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+      /* FF3.6 */
+      background-image: -ms-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+      /* IE10 */
+      background-image: -o-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+      /* Opera 11.10+ */
+      background-image: linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='rgba(255, 255, 255, 0.5)');
+      -webkit-font-smoothing: antialiased;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      display: block;
+      margin: 50px auto 30px auto;
+      padding: 30px 3.03030303%;
+      /* 30/990 */
+      text-align: center;
+      width: 41.41414141%;
+      /* 410/990 */ }
+      .product-banner.pinterest-banner .demo-cta:before, .product-banner.pinterest-banner .demo-cta:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden; }
+      .product-banner.pinterest-banner .demo-cta:after {
+        clear: both; }
+      .product-banner.pinterest-banner .demo-cta strong {
+        float: left; }
+      .product-banner.pinterest-banner .demo-cta img {
+        border-radius: 100%;
+        background-color: #f26961;
+        padding: 10px;
+        float: right;
+        margin: -10px 0; }
+        .product-banner.pinterest-banner .demo-cta img:hover {
+          background-color: #395258; }
+      .product-banner.pinterest-banner .demo-cta:hover {
+        color: #395258; }
+        .product-banner.pinterest-banner .demo-cta:hover img {
+          background-color: #395258; }
+      @media screen and (max-width: 855px) {
+        .product-banner.pinterest-banner .demo-cta {
+          width: 50.64935065%; } }
+      @media screen and (max-width: 685px) {
+        .product-banner.pinterest-banner .demo-cta {
+          padding: 30px 4.379562044%;
+          /* 30/685 */
+          width: 60%; } }
+      @media screen and (max-width: 600px) {
+        .product-banner.pinterest-banner .demo-cta {
+          width: 80%; } }
+      @media screen and (max-width: 500px) {
+        .product-banner.pinterest-banner .demo-cta {
+          width: 100%; } }
 
-.content-frame {
-  background: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
-  height: 56px;
-  margin: 60px 0 -30px 4px;
-  position: relative;
-  width: 99.19191919%; }
-  .content-frame img {
-    left: -4px;
-    position: absolute;
-    top: -1px; }
-    .content-frame img:last-of-type {
-      left: auto;
-      right: -4px; }
+.instagram-banner {
+  background: #f8f6f5; }
