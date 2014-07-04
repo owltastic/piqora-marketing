@@ -18,12 +18,14 @@ a {
 }
 
 h2 {
-    @include sectionHeadline($colorBodyAlt);
+    color: $colorBodyDark;
+    @include sectionHeadline;
     line-height: 1.2857142857em;
 }
 
 h3 {
-    @include sectionSubHeadline($colorBodyDark);
+    color: $colorBodyDark;
+    @include sectionSubHeadline;
 }
 
 h4 {
@@ -43,6 +45,10 @@ h5 {
 
 p {
     @include bodyText;
+}
+
+.headline-alt {
+    color: $colorBodyAlt;
 }
 
 .container {

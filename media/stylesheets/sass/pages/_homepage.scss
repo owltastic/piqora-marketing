@@ -353,7 +353,9 @@
             width: 31.31313131%; /* 310/990 */
 
             strong {
-                @include sectionHeadline(#fff);
+                @include sectionHeadline;
+                color:darken($colorBodyDark,7%);
+                text-shadow: 0 1px 0 rgba(255,255,255,.3);
             }
 
             em {
@@ -396,16 +398,16 @@
             }
         }
     }
+}
 
-    .cta-wide {
-        @include borderRadius(5px);
-        background-color: $colorContentAlternate;
-        border: 1px solid rgba(0,0,0,.3);
-        box-shadow: 0 1px 3px rgba(0,0,0,.15);
-        font-size: 20px;
-        line-height: 1.4em;
-        margin-top: $verticalSpacingLarge;
-        padding: 20px;
-        text-align: center;
-    }
+.cta-wide {
+    @include borderRadius(5px);
+    background-color: $colorContentAlternate;
+    border: 1px solid rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-top: $verticalSpacingLarge;
+    padding: 20px;
+    text-align: center;
 }

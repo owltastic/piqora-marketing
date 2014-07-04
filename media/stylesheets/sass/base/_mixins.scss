@@ -166,9 +166,8 @@
     text-transform: uppercase;
 }
 
-@mixin sectionHeadline($color) {
+@mixin sectionHeadline {
     -webkit-font-smoothing: antialiased;
-    color: $color;
     font: {
         size: 42px;
         weight: 700;
@@ -178,9 +177,8 @@
     margin-bottom: $verticalSpacingMedium;
 }
 
-@mixin sectionSubHeadline($color) {
+@mixin sectionSubHeadline {
     -webkit-font-smoothing: antialiased;
-    color: $color;
     font: {
         size: 32px;
         weight: 700;
