@@ -94,6 +94,26 @@
             width: 100%;
         }
     }
+
+    &.small-image {
+
+        margin-top: 40px;
+        padding: 0 0 40px 0;
+
+        .feature-content {
+            width: 41.41414141%; /* 410/990 */
+        }
+
+        img {
+            width: 52.32323232%; /* 518/990 */
+        }
+    }
+
+    .cta-wide {
+        background: $colorContentHighlight;
+        border: 1px solid rgba(0,0,0,.15);
+        margin: 30px 0 70px 0;
+    }
     
     .feature-content {
         float: right;

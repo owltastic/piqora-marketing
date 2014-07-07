@@ -313,10 +313,19 @@
             background-size: auto 60%;
         }
 
+        @media screen and (max-width: 500px) {
+            background: #f8f6f5 url(../img/banner-bg-instagram.png) no-repeat center bottom;
+            background-size: auto 70%;
+        }
+
         h2 {
             font-size: 40px;
             float: left;
             width: 35%;
+
+            @media screen and (max-width: 670px) {
+                width: 100%;
+            }
         }
 
         p {
@@ -324,6 +333,10 @@
             font-size: 18px;
             margin: 0 0 150px 0;
             width: 60%;
+        
+            @media screen and (max-width: 670px) {
+                width: 100%;
+            }
         }
 
         .product-steps {
@@ -358,13 +371,17 @@
 
     h3 {
         margin-bottom: 60px;
+
+        @media screen and (max-width: 800px) {
+            text-align: center;
+        }
     }
 
     .container {
         padding-bottom: 0;
     }
     
-    .feature-description {
+    .feature-content {
         
         h5 {
             margin-bottom: 10px;
@@ -375,35 +392,21 @@
             margin-bottom: 25px;
         }
     }
-
-    .small-image {
-
-        margin-top: 40px;
-        padding: 0 0 40px 0;
-
-        .feature-content {
-            width: 41.41414141%; /* 410/990 */
-        }
-
-        img {
-            width: 52.32323232%; /* 518/990 */
-        }
-    }
-
-    .cta-wide {
-        background: $colorContentHighlight;
-        border: 1px solid rgba(0,0,0,.15);
-        margin: 30px 0 70px 0;
-    }
 }
 
 .client-highlight {
+    @include outerContainer;
 
     blockquote {
 
         float: left;
         text-indent: -10px;
         width: 65.65656566%; /* 650/990 */
+
+        @media screen and (max-width: 650px) {
+            text-align: center;
+            width: 100%;
+        }
 
         p {
             color: $colorBodyDark;
@@ -413,14 +416,42 @@
                 weight: 300;
             }
             margin-bottom: 30px;
+
+            @media screen and (max-width: 840px) {
+                font-size: 24px;
+            }
         }
 
         cite {
             font-family: $fontSerif;
         }
+
+        img {
+
+            float: right;
+
+            @media screen and (max-width: 840px) {
+                display: block;
+                float: none;
+                margin: 30px 0 0 0;
+            }
+
+            @media screen and (max-width: 650px) {
+                margin: 30px auto 0 auto;
+            }
+        }
+
     }
 
-    img {
+    .client-highlight-image {
         float: right;
+        width: 24.34343434%;
+
+        @media screen and (max-width: 650px) {
+            display: block;
+            float: none;
+            margin: 30px auto;
+            width: 36.92307692%;
+        }
     }
 }
