@@ -481,16 +481,24 @@
     }
 }
 
-.tumblr-features.feature-overview {
-    position: relative;
-    z-index: 3;
+.tumblr-features {
+    &.feature-overview {
+        padding-bottom: 60px;
+        position: relative;
+        z-index: 3;
 
-    .feature-headline {
-        margin: 30px 0 50px 0;
+        .feature-headline {
+            margin: 30px 0 50px 0;
     
-        h4 {
-            width: 100%;
+            h4 {
+                width: 100%;
+            }
         }
+    }
+
+    .features-center .feature-description,
+    .features-center .main-cta {
+        margin-top: 20px;
     }
 
 }

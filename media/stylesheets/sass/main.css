@@ -1706,9 +1706,13 @@ footer {
         width: 36.92307692%; } }
 
 .tumblr-features.feature-overview {
+  padding-bottom: 60px;
   position: relative;
   z-index: 3; }
   .tumblr-features.feature-overview .feature-headline {
     margin: 30px 0 50px 0; }
     .tumblr-features.feature-overview .feature-headline h4 {
       width: 100%; }
+.tumblr-features .features-center .feature-description,
+.tumblr-features .features-center .main-cta {
+  margin-top: 20px; }
