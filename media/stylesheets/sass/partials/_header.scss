@@ -110,7 +110,10 @@ header {
         &.featured-navigation {
             float: right;
         }
+    }
 
+    &.no-border {
+        border-bottom: none;
     }
 
     .main-cta {
