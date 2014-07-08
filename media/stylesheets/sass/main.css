@@ -497,13 +497,13 @@ input[type=submit] {
   @media screen and (max-width: 580px) {
     .features-highlight .feature .feature-image {
       width: 100%; } }
-  .features-highlight.small-image {
+  .features-highlight .small-image {
     margin-top: 40px;
-    padding: 0 0 40px 0; }
-    .features-highlight.small-image .feature-content {
+    padding: 30px 0 40px 0; }
+    .features-highlight .small-image .feature-content {
       width: 41.41414141%;
       /* 410/990 */ }
-    .features-highlight.small-image img {
+    .features-highlight .small-image img {
       width: 52.32323232%;
       /* 518/990 */ }
   .features-highlight .cta-wide {
@@ -1480,6 +1480,75 @@ footer {
       .product-banner .product-steps span.restart {
         left: auto;
         right: -20px; }
+  .product-banner .demo-cta {
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    color: #f26961;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5)));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+    /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+    /* IE10 */
+    background-image: -o-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+    /* Opera 11.10+ */
+    background-image: linear-gradient(top, white, rgba(255, 255, 255, 0.5));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='rgba(255, 255, 255, 0.5)');
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 50px auto 30px auto;
+    padding: 30px 3.03030303%;
+    /* 30/990 */
+    text-align: center;
+    width: 41.41414141%;
+    /* 410/990 */ }
+    .product-banner .demo-cta:before, .product-banner .demo-cta:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      overflow: hidden; }
+    .product-banner .demo-cta:after {
+      clear: both; }
+    .product-banner .demo-cta strong {
+      float: left; }
+    .product-banner .demo-cta img {
+      border-radius: 100%;
+      background-color: #f26961;
+      padding: 10px;
+      float: right;
+      margin: -10px 0; }
+      .product-banner .demo-cta img:hover {
+        background-color: #395258; }
+    .product-banner .demo-cta:hover {
+      color: #395258; }
+      .product-banner .demo-cta:hover img {
+        background-color: #395258; }
+    @media screen and (max-width: 855px) {
+      .product-banner .demo-cta {
+        width: 50.64935065%; } }
+    @media screen and (max-width: 685px) {
+      .product-banner .demo-cta {
+        padding: 30px 4.379562044%;
+        /* 30/685 */
+        width: 60%; } }
+    @media screen and (max-width: 600px) {
+      .product-banner .demo-cta {
+        width: 80%; } }
+    @media screen and (max-width: 500px) {
+      .product-banner .demo-cta {
+        width: 100%; } }
   .product-banner .content-frame {
     background: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
@@ -1523,75 +1592,6 @@ footer {
       @media screen and (max-width: 505px) {
         .product-banner.pinterest-banner p {
           font-size: 18px; } }
-    .product-banner.pinterest-banner .demo-cta {
-      border-radius: 5px;
-      -webkit-background-clip: padding-box;
-      -moz-background-clip: padding;
-      background-clip: padding-box;
-      color: #f26961;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0;
-      text-transform: uppercase;
-      background-color: rgba(255, 255, 255, 0.5);
-      /* Fallback Color */
-      background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5)));
-      /* Saf4+, Chrome */
-      background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-      /* Chrome 10+, Saf5.1+, iOS 5+ */
-      background-image: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-      /* FF3.6 */
-      background-image: -ms-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-      /* IE10 */
-      background-image: -o-linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-      /* Opera 11.10+ */
-      background-image: linear-gradient(top, white, rgba(255, 255, 255, 0.5));
-      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='white', EndColorStr='rgba(255, 255, 255, 0.5)');
-      -webkit-font-smoothing: antialiased;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-      display: block;
-      margin: 50px auto 30px auto;
-      padding: 30px 3.03030303%;
-      /* 30/990 */
-      text-align: center;
-      width: 41.41414141%;
-      /* 410/990 */ }
-      .product-banner.pinterest-banner .demo-cta:before, .product-banner.pinterest-banner .demo-cta:after {
-        content: "\0020";
-        display: block;
-        height: 0;
-        overflow: hidden; }
-      .product-banner.pinterest-banner .demo-cta:after {
-        clear: both; }
-      .product-banner.pinterest-banner .demo-cta strong {
-        float: left; }
-      .product-banner.pinterest-banner .demo-cta img {
-        border-radius: 100%;
-        background-color: #f26961;
-        padding: 10px;
-        float: right;
-        margin: -10px 0; }
-        .product-banner.pinterest-banner .demo-cta img:hover {
-          background-color: #395258; }
-      .product-banner.pinterest-banner .demo-cta:hover {
-        color: #395258; }
-        .product-banner.pinterest-banner .demo-cta:hover img {
-          background-color: #395258; }
-      @media screen and (max-width: 855px) {
-        .product-banner.pinterest-banner .demo-cta {
-          width: 50.64935065%; } }
-      @media screen and (max-width: 685px) {
-        .product-banner.pinterest-banner .demo-cta {
-          padding: 30px 4.379562044%;
-          /* 30/685 */
-          width: 60%; } }
-      @media screen and (max-width: 600px) {
-        .product-banner.pinterest-banner .demo-cta {
-          width: 80%; } }
-      @media screen and (max-width: 500px) {
-        .product-banner.pinterest-banner .demo-cta {
-          width: 100%; } }
   .product-banner.instagram-banner {
     background: #f8f6f5 url(../img/banner-bg-instagram.png) no-repeat bottom right;
     background-size: auto 75%; }
@@ -1633,7 +1633,23 @@ footer {
         top: 0; }
       .product-banner.instagram-banner .product-steps a:hover span {
         background: #fff; }
+  .product-banner.tumblr-banner {
+    background: url(../img/banner-bg-tumblr.jpg) no-repeat bottom right;
+    background-size: auto 100%; }
+    .product-banner.tumblr-banner .container {
+      padding-bottom: 50px; }
+    .product-banner.tumblr-banner .banner-description {
+      width: 65.65656566%;
+      /* 650/990 */ }
+    .product-banner.tumblr-banner .demo-cta {
+      margin: 50px 0 0 0;
+      width: 52.30769231%;
+      /* 340/650 */ }
+    .product-banner.tumblr-banner .content-frame {
+      margin-bottom: -70px; }
 
+.instagram-features .container {
+  padding-top: 30px; }
 .instagram-features h3 {
   margin-bottom: 60px; }
   @media screen and (max-width: 800px) {
@@ -1688,3 +1704,11 @@ footer {
         float: none;
         margin: 30px auto;
         width: 36.92307692%; } }
+
+.tumblr-features.feature-overview {
+  position: relative;
+  z-index: 3; }
+  .tumblr-features.feature-overview .feature-headline {
+    margin: 30px 0 50px 0; }
+    .tumblr-features.feature-overview .feature-headline h4 {
+      width: 100%; }

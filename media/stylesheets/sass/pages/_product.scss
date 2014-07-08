@@ -192,6 +192,56 @@
         }
     }
 
+    .demo-cta {
+        @include clear;
+        @include borderRadius(5px);
+        @include calloutText($colorAccent);
+        @include linearGradient(#FFF,rgba(255,255,255,.5));
+        -webkit-font-smoothing: antialiased;
+        border: 1px solid rgba(0,0,0,.2);
+        box-shadow: 0 2px 3px rgba(0,0,0,.1);
+        display: block;
+        margin: $verticalSpacingLarge auto $verticalSpacingMedium auto;
+        padding: 30px 3.03030303%; /* 30/990 */
+        text-align: center;
+        width: 41.41414141%; /* 410/990 */
+
+        strong {
+            float: left;
+        }
+
+        img {
+            @include iconContainer(10px,$colorAccent);
+            float: right;
+            margin: -10px 0;
+        }
+
+        &:hover {
+            color: $colorBodyDark;
+
+            img {
+                background-color: $colorBodyDark;
+            }
+        }
+
+        @media screen and (max-width: 855px) {
+            width: 50.64935065%;
+        }
+
+        @media screen and (max-width: 685px) {
+            padding: 30px 4.379562044%; /* 30/685 */
+            width: 60%;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
     .content-frame {
         background: #fff;
         border: {
@@ -251,56 +301,6 @@
             
             @media screen and (max-width: 505px) {
                 font-size: 18px;
-            }
-        }
-
-        .demo-cta {
-            @include clear;
-            @include borderRadius(5px);
-            @include calloutText($colorAccent);
-            @include linearGradient(#FFF,rgba(255,255,255,.5));
-            -webkit-font-smoothing: antialiased;
-            border: 1px solid rgba(0,0,0,.2);
-            box-shadow: 0 2px 3px rgba(0,0,0,.1);
-            display: block;
-            margin: $verticalSpacingLarge auto $verticalSpacingMedium auto;
-            padding: 30px 3.03030303%; /* 30/990 */
-            text-align: center;
-            width: 41.41414141%; /* 410/990 */
-
-            strong {
-                float: left;
-            }
-
-            img {
-                @include iconContainer(10px,$colorAccent);
-                float: right;
-                margin: -10px 0;
-            }
-
-            &:hover {
-                color: $colorBodyDark;
-
-                img {
-                    background-color: $colorBodyDark;
-                }
-            }
-
-            @media screen and (max-width: 855px) {
-                width: 50.64935065%;
-            }
-
-            @media screen and (max-width: 685px) {
-                padding: 30px 4.379562044%; /* 30/685 */
-                width: 60%;
-            }
-
-            @media screen and (max-width: 600px) {
-                width: 80%;
-            }
-
-            @media screen and (max-width: 500px) {
-                width: 100%;
             }
         }
     }
@@ -365,9 +365,34 @@
             }
         }
     }
+
+    &.tumblr-banner {
+        background: url(../img/banner-bg-tumblr.jpg) no-repeat bottom right;
+        background-size: auto 100%;     
+        
+        .container {
+            padding-bottom: 50px;
+        }
+
+        .banner-description {
+            width: 65.65656566%; /* 650/990 */
+        }  
+
+        .demo-cta {
+            margin: 50px 0 0 0;
+            width: 52.30769231%; /* 340/650 */
+        } 
+
+        .content-frame {
+            margin-bottom: -70px;
+        }
+    }
 }
 
 .instagram-features {
+    .container {
+        padding-top: 30px;
+    }
 
     h3 {
         margin-bottom: 60px;
@@ -454,4 +479,18 @@
             width: 36.92307692%;
         }
     }
+}
+
+.tumblr-features.feature-overview {
+    position: relative;
+    z-index: 3;
+
+    .feature-headline {
+        margin: 30px 0 50px 0;
+    
+        h4 {
+            width: 100%;
+        }
+    }
+
 }
