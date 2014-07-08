@@ -31,6 +31,24 @@
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
+@mixin columnLayout($columnCount,$columnGap,$columnFill) {
+    -webkit-column-count: $columnCount;
+    -webkit-column-gap: $columnGap;
+    -webkit-column-fill: $columnFill;
+    -moz-column-count: $columnCount;
+    -moz-column-gap: $columnGap;
+    -moz-column-fill: $columnFill;
+    column-count: $columnCount;
+    column-gap: $columnGap;
+    column-fill: $columnFill;
+}
+
+@mixin columnBreak($columnBreak) {
+    -webkit-column-break-inside: ($columnBreak);
+    -moz-column-break-inside: ($columnBreak);
+    column-break-inside: ($columnBreak);
+}
+
 @mixin borderRadius($radius) {
     border-radius: ($radius);
     -webkit-background-clip: padding-box; 
