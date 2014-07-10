@@ -1,6 +1,10 @@
 footer {
     @include outerContainer;
 
+    &.alt-color {
+        background: $colorContentHighlight;
+    }
+
     .container {
         @include clear;
     }

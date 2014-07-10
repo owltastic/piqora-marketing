@@ -66,11 +66,12 @@
     }
 }
 
-input {
+input, textarea {
     box-sizing: border-box;
 }
 
-input:not([type=submit]) {
+input:not([type=submit]),
+textarea {
     @include borderRadius(4px);
     border: 1px solid rgba(0,0,0,.3);
     color: lighten($colorBodyAlt,20%);
@@ -82,6 +83,7 @@ input:not([type=submit]) {
 }
 
 input[type=submit] {
+    -webkit-font-smoothing: antialiased;
     @include mainCta;
     cursor: pointer;
     font-family: $fontSans;

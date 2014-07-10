@@ -352,10 +352,11 @@ header {
     color: #fff;
     font-size: 18px; }
 
-input {
+input, textarea {
   box-sizing: border-box; }
 
-input:not([type=submit]) {
+input:not([type=submit]),
+textarea {
   border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -367,6 +368,7 @@ input:not([type=submit]) {
   padding: 10px; }
 
 input[type=submit] {
+  -webkit-font-smoothing: antialiased;
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -805,6 +807,8 @@ input[type=submit] {
 
 footer {
   padding: 0 5%; }
+  footer.alt-color {
+    background: #e9f0f2; }
   footer .container:before, footer .container:after {
     content: "\0020";
     display: block;
@@ -1787,9 +1791,8 @@ footer {
     background-clip: padding-box;
     -webkit-font-smoothing: antialiased;
     background: #f2f1f0;
-    border: 1px solid #EBEBE9;
+    border: 1px solid #dad7d5;
     margin-bottom: 30px;
-    overflow: visible;
     padding: 30px; }
   .resources-list .resource-type {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -1861,3 +1864,134 @@ footer {
       background-clip: padding-box;
       float: right;
       width: 20px; }
+
+.demo-main {
+  padding: 0 5%;
+  background: url(../img/banner-bg-demo.jpg) no-repeat right bottom;
+  background-size: cover;
+  padding-bottom: 30px; }
+  .demo-main h5 {
+    margin-bottom: 20px; }
+  .demo-main form,
+  .demo-main .client-quote,
+  .demo-main .video-module {
+    border-radius: 7px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  .demo-main form {
+    background: rgba(255, 255, 255, 0.8);
+    float: left;
+    padding: 50px 50px 30px 50px;
+    width: 48.48484848%;
+    /* 480/990 */ }
+  .demo-main label {
+    display: block;
+    margin-bottom: 10px; }
+    .demo-main label em {
+      color: #f26961;
+      font-style: italic;
+      float: right; }
+  .demo-main input,
+  .demo-main textarea {
+    width: 100%;
+    margin-bottom: 20px; }
+  .demo-main input:not([type=submit]),
+  .demo-main textarea {
+    background: #e9f0f2;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .demo-main input[type=submit] {
+    padding: 15px; }
+  .demo-main input:focus,
+  .demo-main select:focus,
+  .demo-main textarea:focus,
+  .demo-main button:focus {
+    outline: none; }
+  .demo-main .field-group:before, .demo-main .field-group:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .demo-main .field-group:after {
+    clear: both; }
+  .demo-main .small-field {
+    float: left;
+    width: 46%; }
+    .demo-main .small-field:last-of-type {
+      float: right; }
+
+.form-info {
+  float: right;
+  width: 45.45454545%;
+  /* 450/990 */ }
+  .form-info .client-quote,
+  .form-info .video-module {
+    background: rgba(242, 241, 240, 0.8);
+    margin-bottom: 30px;
+    padding: 30px; }
+    .form-info .client-quote p,
+    .form-info .video-module p {
+      float: left;
+      width: 68.78306878%;
+      /* 260/378 */ }
+  .form-info .attribution {
+    float: right;
+    width: 21.16402116%;
+    /* 80/378 */ }
+    .form-info .attribution img {
+      margin-bottom: 20px; }
+    .form-info .attribution cite {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 1.4em;
+      text-transform: uppercase;
+      text-align: center; }
+  .form-info .video-module p {
+    float: left;
+    width: 50%; }
+  .form-info .video-module img {
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    float: right;
+    padding: 5px;
+    width: 42%; }
+
+.demo-faq {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0 0 0; }
+  .demo-faq .container {
+    padding-bottom: 0; }
+  .demo-faq ul {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1.875em;
+    -webkit-column-fill: auto;
+    -moz-column-count: 2;
+    -moz-column-gap: 1.875em;
+    -moz-column-fill: auto;
+    column-count: 2;
+    column-gap: 1.875em;
+    column-fill: auto; }
+  .demo-faq h4 {
+    margin-bottom: 20px; }
+  .demo-faq li {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background: #f2f1f0;
+    border: 1px solid #dad7d5;
+    margin-bottom: 30px;
+    overflow: visible;
+    padding: 30px; }
