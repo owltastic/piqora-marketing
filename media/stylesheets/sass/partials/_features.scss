@@ -54,7 +54,7 @@
     .feature {
         @include clear;
         border-top: 1px solid $colorBorders;
-        padding: 60px 0 0 0;
+        padding: 60px 0;
     
         &.no-border {
             border-top: none;
@@ -362,18 +362,17 @@
     }
 }
 
+.highlighted {
+    background:$colorContentHighlight;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+}
+
 .feature-overview {
     @include outerContainer;
 
-    &.highlighted {
-        background:$colorContentHighlight;
-        border-top: 1px solid rgba(0,0,0,.1);
-        box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
-        margin-top: $verticalSpacingMedium;
-
-        .overview-image {
-            margin-bottom: -2px;
-        }
+    .overview-image {
+        margin-bottom: -2px;
     }
 
     .container {
