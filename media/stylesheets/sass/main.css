@@ -870,6 +870,9 @@ footer {
     padding: 8px 0; }
   footer .social-icons {
     float: left; }
+    footer .social-icons h6 {
+      border-bottom: none;
+      margin-bottom: 20px; }
     footer .social-icons li {
       float: left; }
     footer .social-icons img {
