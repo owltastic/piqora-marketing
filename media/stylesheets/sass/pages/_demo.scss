@@ -112,11 +112,8 @@
 		}
 		img {
 			@include borderRadius(3px);
-			background: #fff;
-			border: 1px solid rgba(0,0,0,.2);
-			box-shadow: 0 0 5px rgba(0,0,0,.1);
+			@include imageFrame;
 			float: right;
-			padding: 5px;
 			width: 42%;
 		}
 	}

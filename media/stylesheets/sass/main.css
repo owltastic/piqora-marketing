@@ -1824,13 +1824,12 @@ footer {
   .resources-list p {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .resources-list p img {
-      background: rgba(255, 255, 255, 0.4);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 5px;
       float: left;
       margin: 7px 20px 10px 0;
-      padding: 5px;
       width: 90px; }
   .resources-list a {
     color: white;
@@ -1963,8 +1962,8 @@ footer {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    float: right;
     padding: 5px;
+    float: right;
     width: 42%; }
 
 .demo-faq {
@@ -2085,7 +2084,7 @@ footer {
     margin-bottom: 30px; }
   .our-culture img {
     background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 5px;
     width: 100%; }
@@ -2130,3 +2129,119 @@ footer {
   .something-else .emphasized {
     margin: 0 auto;
     width: 70%; }
+
+.leading-brands {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .leading-brands h2 {
+    text-align: center; }
+  .leading-brands p {
+    font-size: 20px;
+    margin: 30px auto 50px auto;
+    text-align: center;
+    width: 80%; }
+  .leading-brands .client-logos li {
+    float: left;
+    margin-right: 3.03030303%; }
+    .leading-brands .client-logos li:last-of-type {
+      margin-right: 0; }
+
+.client-quotes {
+  padding: 60px 0; }
+  .client-quotes blockquote {
+    float: left;
+    margin-right: 3.03030303%;
+    width: 31.31313131%; }
+    .client-quotes blockquote:last-of-type {
+      margin-right: 0; }
+  .client-quotes p {
+    margin-bottom: 30px; }
+  .client-quotes cite {
+    line-height: 1.5em; }
+
+.promotions h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 30px; }
+.promotions li {
+  float: left;
+  margin: 30px 3.03030303% 30px 0;
+  width: 22.72727273%; }
+  .promotions li:last-of-type {
+    margin-right: 0; }
+.promotions img {
+  margin-bottom: 30px; }
+.promotions .promotion {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 30px 0 0 0;
+  width: 100%; }
+
+.case-study {
+  padding: 30px 0; }
+  .case-study .study {
+    border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background: #f2f1f0;
+    border: 1px solid #dad7d5;
+    float: left;
+    margin-right: 3.03030303%;
+    /* 30/990 */
+    padding: 30px;
+    width: 48.48484848%;
+    /* 480/990 */ }
+    .case-study .study:last-of-type {
+      margin-right: 0; }
+    .case-study .study h5 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+      padding-bottom: 10px; }
+    .case-study .study h4 {
+      font-size: 18px;
+      margin-bottom: 20px; }
+    .case-study .study a {
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      border-radius: 5px;
+      -webkit-background-clip: padding-box;
+      -moz-background-clip: padding;
+      background-clip: padding-box;
+      background: #f26961;
+      border: 1px solid #ac170e;
+      border-bottom: 1px solid #9e150d;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      padding: 10px 15px;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block; }
+      .case-study .study a:hover {
+        background-color: #5d858f;
+        border: 1px solid #3f5a61;
+        color: #fff; }
+    .case-study .study img {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 5px;
+      float: left;
+      margin: 3px 6.25% 0 0; }
+  .case-study .mini-studies {
+    margin-top: 60px; }
+    .case-study .mini-studies li {
+      float: left;
+      margin-right: 3.03030303%;
+      /* 30/990 */
+      width: 31.31313131%; }
+      .case-study .mini-studies li:last-of-type {
+        margin-right: 0; }
+      .case-study .mini-studies li img {
+        float: left;
+        margin-right: 30px; }
+      .case-study .mini-studies li p {
+        float: right;
+        width: 64.51612903%;
+        /* 200/310 */ }
