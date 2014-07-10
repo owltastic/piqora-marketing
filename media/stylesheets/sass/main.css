@@ -2092,6 +2092,9 @@ footer {
     width: 31.31313131%; }
     .our-culture .culture-fact:last-of-type {
       margin-right: 0; }
+    .our-culture .culture-fact p {
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5em; }
 
 .our-mission .feature-content {
   float: left;

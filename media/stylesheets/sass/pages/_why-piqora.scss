@@ -142,6 +142,11 @@
 		&:last-of-type {
 			margin-right: 0;
 		}
+
+		p {
+			font-family: $fontSans;
+			line-height: 1.5em;
+		}
 	}
 }
 
