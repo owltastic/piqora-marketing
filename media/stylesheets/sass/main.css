@@ -2304,3 +2304,52 @@ footer {
       margin: 5px 0 15px 0; }
     .press-timeline li p {
       font-size: 14px; }
+
+.team {
+  padding: 0 5%;
+  background: url(../img/banner-bg-team.png) no-repeat right bottom;
+  background-size: auto 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .team .description {
+    width: 58.58585859%; }
+  .team h4 {
+    margin-bottom: 30px; }
+  .team p {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.jobs-cta {
+  text-align: center; }
+
+.team-overview .container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.team-overview:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .team-overview:last-of-type .container {
+    border-bottom: none; }
+.team-overview ul {
+  margin: 0 auto;
+  text-align: center; }
+  .team-overview ul:before, .team-overview ul:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .team-overview ul:after {
+    clear: both; }
+.team-overview li {
+  display: inline-block;
+  margin: 0 3.03030303% 30px 0;
+  width: 14.14141414%; }
+  .team-overview li img {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 100%; }
+.team-overview blockquote {
+  margin: 10px auto;
+  width: 80%; }
+  .team-overview blockquote p {
+    color: #5d858f;
+    font-size: 20px;
+    margin-bottom: 15px; }
