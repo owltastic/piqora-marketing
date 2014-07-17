@@ -1117,7 +1117,8 @@ footer {
     padding: 0 15px;
     vertical-align: middle; }
     .homepage-customers li img {
-      width: 100%; }
+      max-height: 50px;
+      max-width: 100%; }
     @media screen and (max-width: 895px) {
       .homepage-customers li {
         padding: 0 10px; } }
@@ -2308,8 +2309,7 @@ footer {
 .team {
   padding: 0 5%;
   background: url(../img/banner-bg-team.png) no-repeat right bottom;
-  background-size: auto 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  background-size: auto 100%; }
   .team .description {
     width: 58.58585859%; }
   .team h4 {
@@ -2318,6 +2318,7 @@ footer {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .jobs-cta {
+  padding: 0 5%;
   text-align: center; }
 
 .team-overview .container {

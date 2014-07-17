@@ -2,7 +2,6 @@
     @include outerContainer;
     background: url(../img/banner-bg-team.png) no-repeat right bottom; 
     background-size: auto 100%;
-    border-bottom: 1px solid $colorBorders;	
 
     .description {
     	width: 58.58585859%;
@@ -18,6 +17,7 @@
 }
 
 .jobs-cta {
+	@include outerContainer;
 	text-align: center;
 }
 
