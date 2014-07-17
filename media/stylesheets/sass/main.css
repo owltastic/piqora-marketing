@@ -2141,10 +2141,21 @@ footer {
     text-align: center;
     width: 80%; }
   .leading-brands .client-logos li {
-    float: left;
-    margin-right: 3.03030303%; }
-    .leading-brands .client-logos li:last-of-type {
-      margin-right: 0; }
+    display: table-cell;
+    padding: 0 15px;
+    vertical-align: middle; }
+    .leading-brands .client-logos li img {
+      max-height: 50px;
+      max-width: 100%; }
+    @media screen and (max-width: 895px) {
+      .leading-brands .client-logos li {
+        padding: 0 10px; } }
+    @media screen and (max-width: 760px) {
+      .leading-brands .client-logos li {
+        padding: 10px 5%; } }
+    @media screen and (max-width: 490px) {
+      .leading-brands .client-logos li {
+        padding: 10px 2%; } }
 
 .client-quotes {
   padding: 60px 0; }

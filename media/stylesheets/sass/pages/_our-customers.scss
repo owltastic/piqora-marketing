@@ -13,12 +13,26 @@
 	}
 
 	.client-logos li {
-		float: left;
-		margin-right: 3.03030303%;
+        display: table-cell;
+        padding: 0 15px;
+        vertical-align: middle;
 
-		&:last-of-type {
-			margin-right: 0;
-		}
+        img {
+            max-height: 50px;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 895px) {
+            padding: 0 10px;
+        }
+
+        @media screen and (max-width: 760px) {
+            padding: 10px 5%;
+        }
+
+        @media screen and (max-width: 490px) {
+            padding: 10px 2%;
+        }
 	}
 }
 
