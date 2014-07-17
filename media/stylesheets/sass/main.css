@@ -251,7 +251,7 @@ header {
         display: none; }
         header .main-navigation li.jump-navigation {
           display: block; } }
-  @media screen and (max-width: 850px), (max-width: 590px) {
+  @media screen and (max-width: 910px), (max-width: 590px) {
     header {
       padding-bottom: 20px; }
       header .logo {
@@ -1654,17 +1654,38 @@ footer {
       .product-banner.instagram-banner .product-steps a:hover span {
         background: #fff; }
   .product-banner.tumblr-banner {
-    background: url(../img/banner-bg-tumblr.jpg) no-repeat bottom right;
+    background: url(../img/banner-bg-tumblr.jpg) no-repeat 50% bottom;
     background-size: auto 100%; }
+    @media screen and (min-width: 1225px) {
+      .product-banner.tumblr-banner {
+        background-size: cover; } }
+    .product-banner.tumblr-banner .featured-navigation a {
+      color: #FFF;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
     .product-banner.tumblr-banner .container {
       padding-bottom: 50px; }
     .product-banner.tumblr-banner .banner-description {
       width: 65.65656566%;
       /* 650/990 */ }
+      @media screen and (max-width: 895px) {
+        .product-banner.tumblr-banner .banner-description {
+          width: 80%; } }
+      @media screen and (max-width: 800px) {
+        .product-banner.tumblr-banner .banner-description {
+          width: 90%; } }
+      @media screen and (max-width: 750px) {
+        .product-banner.tumblr-banner .banner-description {
+          width: 100%; } }
     .product-banner.tumblr-banner .demo-cta {
       margin: 50px 0 0 0;
       width: 52.30769231%;
       /* 340/650 */ }
+      @media screen and (max-width: 685px) {
+        .product-banner.tumblr-banner .demo-cta {
+          width: 60%; } }
+      @media screen and (max-width: 580px) {
+        .product-banner.tumblr-banner .demo-cta {
+          width: 100%; } }
     .product-banner.tumblr-banner .content-frame {
       margin-bottom: -70px; }
 

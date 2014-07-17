@@ -367,20 +367,49 @@
     }
 
     &.tumblr-banner {
-        background: url(../img/banner-bg-tumblr.jpg) no-repeat bottom right;
+        background: url(../img/banner-bg-tumblr.jpg) no-repeat 50% bottom;
         background-size: auto 100%;     
         
+        @media screen and (min-width:1225px) {
+            background-size: cover;    
+        }
+
+        .featured-navigation a {
+            color: #FFF;
+            text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        }
+
         .container {
             padding-bottom: 50px;
         }
 
         .banner-description {
             width: 65.65656566%; /* 650/990 */
+
+            @media screen and (max-width:895px) {
+                width: 80%;
+            }
+
+             @media screen and (max-width:800px) {
+                width: 90%;
+            }
+
+            @media screen and (max-width:750px) {
+                width: 100%;
+            }
         }  
 
         .demo-cta {
             margin: 50px 0 0 0;
             width: 52.30769231%; /* 340/650 */
+
+            @media screen and (max-width:685px) {
+                width: 60%;
+            }
+
+            @media screen and (max-width:580px) {
+                width: 100%;
+            }
         } 
 
         .content-frame {
