@@ -1597,6 +1597,10 @@ footer {
   .product-banner.pinterest-banner {
     background: url(../img/banner-bg-pinterest.jpg) no-repeat right bottom;
     background-size: auto 100%; }
+    @media screen and (min-width: 1170px) {
+      .product-banner.pinterest-banner {
+        background: url(../img/banner-bg-pinterest.jpg) no-repeat right top;
+        background-size: auto 120%; } }
     @media screen and (max-width: 785px) {
       .product-banner.pinterest-banner {
         background: url(../img/banner-bg-pinterest.jpg) no-repeat 85% top;
@@ -1765,6 +1769,32 @@ footer {
 .tumblr-features .features-center .feature-description,
 .tumblr-features .features-center .main-cta {
   margin-top: 20px; }
+
+.product-screenshots {
+  padding: 0 5%;
+  box-shadow: none; }
+  .product-screenshots h3 {
+    float: left; }
+  .product-screenshots .container {
+    padding-bottom: 0; }
+  .product-screenshots .screenshots-icon {
+    float: right; }
+    .product-screenshots .screenshots-icon img {
+      border-radius: 100%;
+      background-color: #f26b63;
+      padding: 10px; }
+      .product-screenshots .screenshots-icon img:hover {
+        background-color: #395258; }
+  .product-screenshots .screenshots img {
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; }
 
 .simple-banner {
   padding: 0 5%;
