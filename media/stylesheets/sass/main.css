@@ -1627,6 +1627,9 @@ footer {
   .product-banner.instagram-banner {
     background: #f8f6f5 url(../img/banner-bg-instagram.png) no-repeat bottom right;
     background-size: auto 75%; }
+    @media screen and (min-width: 1400px) {
+      .product-banner.instagram-banner {
+        background-size: auto 80%; } }
     @media screen and (max-width: 1025px) {
       .product-banner.instagram-banner {
         background-size: auto 60%; } }
