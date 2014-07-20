@@ -913,7 +913,13 @@ footer {
     @media screen and (max-width: 990px) {
       .homepage-banner h2 {
         width: 100%; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (min-width: 1580px) {
+    .homepage-banner {
+      background-size: auto 115%; } }
+  @media screen and (max-width: 1470px) {
+    .homepage-banner {
+      background-size: auto 100%; } }
+  @media screen and (max-width: 1280px) {
     .homepage-banner {
       background-size: auto 90%; } }
   @media screen and (max-width: 990px) {
@@ -1036,6 +1042,8 @@ footer {
       filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0f0f6', EndColorStr='#d0e8f1'); }
       .banner-cta a:hover strong, .banner-cta a:hover em {
         color: #395258; }
+    .banner-cta a strong {
+      margin-top: 5px; }
     .banner-cta a br {
       display: none; }
   @media screen and (max-width: 930px) and (min-width: 650px) {
