@@ -1135,6 +1135,7 @@ footer {
     padding: 0 15px;
     vertical-align: middle; }
     .homepage-customers li img {
+      min-width: 30px;
       max-height: 50px;
       max-width: 100%; }
     @media screen and (max-width: 895px) {
@@ -2403,57 +2404,149 @@ footer {
     margin: 30px auto 50px auto;
     text-align: center;
     width: 80%; }
-  .leading-brands .client-logos li {
+    @media screen and (max-width: 560px) {
+      .leading-brands p {
+        width: 100%; } }
+
+.logos {
+  display: table;
+  width: 100%; }
+  .logos:before, .logos:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .logos:after {
+    clear: both; }
+  @media screen and (max-width: 760px) {
+    .logos {
+      padding: 10px 0; } }
+  .logos ul {
+    display: table-cell; }
+    @media screen and (max-width: 760px) {
+      .logos ul {
+        display: table;
+        width: 100%; } }
+  @media screen and (min-width: 760px) {
+    .logos ul:first-of-type li:first-of-type {
+      padding-left: 0; }
+    .logos ul:last-of-type li:last-of-type {
+      padding-right: 0; } }
+  .logos li {
     display: table-cell;
     padding: 0 15px;
     vertical-align: middle; }
-    .leading-brands .client-logos li img {
+    .logos li img {
+      min-width: 30px;
       max-height: 50px;
       max-width: 100%; }
     @media screen and (max-width: 895px) {
-      .leading-brands .client-logos li {
+      .logos li {
         padding: 0 10px; } }
     @media screen and (max-width: 760px) {
-      .leading-brands .client-logos li {
+      .logos li {
         padding: 10px 5%; } }
     @media screen and (max-width: 490px) {
-      .leading-brands .client-logos li {
+      .logos li {
         padding: 10px 2%; } }
 
 .client-quotes {
-  padding: 60px 0; }
+  padding: 0 5%; }
+  .client-quotes:before, .client-quotes:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .client-quotes:after {
+    clear: both; }
   .client-quotes blockquote {
     float: left;
-    margin-right: 3.03030303%;
+    margin: 50px 3.03030303% 50px 0;
     width: 31.31313131%; }
     .client-quotes blockquote:last-of-type {
       margin-right: 0; }
+    @media screen and (max-width: 680px) {
+      .client-quotes blockquote {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        float: none;
+        margin: 30px 0;
+        padding-bottom: 30px;
+        width: 100%; }
+        .client-quotes blockquote:first-of-type {
+          margin-top: 50px; }
+        .client-quotes blockquote:last-of-type {
+          border-bottom: none; } }
   .client-quotes p {
     margin-bottom: 30px; }
   .client-quotes cite {
     line-height: 1.5em; }
 
-.promotions h3 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  padding-bottom: 30px; }
-.promotions li {
-  float: left;
-  margin: 30px 3.03030303% 30px 0;
-  width: 22.72727273%; }
-  .promotions li:last-of-type {
-    margin-right: 0; }
-.promotions img {
-  margin-bottom: 30px; }
-.promotions .promotion {
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  margin: 30px 0 0 0;
-  width: 100%; }
+.promotions {
+  padding: 0 5%; }
+  .promotions h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 30px; }
+  .promotions li {
+    float: left;
+    margin: 30px 3.03030303% 30px 0;
+    width: 22.72727273%; }
+    .promotions li:last-of-type {
+      margin-right: 0; }
+  .promotions br {
+    display: none; }
+    @media screen and (max-width: 860px) {
+      .promotions br {
+        display: block; } }
+  .promotions img {
+    margin-bottom: 30px;
+    max-width: 100%; }
+  .promotions .company img {
+    max-height: 40px; }
+  .promotions .promotion {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 30px 0 0 0; }
+  @media screen and (max-width: 650px) {
+    .promotions h3 {
+      text-align: left; }
+      .promotions h3 br {
+        display: none; }
+    .promotions li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      float: none;
+      margin: 0;
+      padding: 30px 0;
+      width: 100%; }
+      .promotions li:before, .promotions li:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden; }
+      .promotions li:after {
+        clear: both; }
+      .promotions li:first-of-type {
+        padding-top: 0; }
+      .promotions li:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0; }
+      .promotions li .company {
+        float: right;
+        text-align: left;
+        width: 56.41025641%;
+        /* 330/585 */ }
+        .promotions li .company h5 {
+          text-align: left; }
+          .promotions li .company h5 br {
+            display: none; }
+      .promotions li .promotion {
+        margin: 0;
+        float: left;
+        width: 38.46153846%; } }
 
 .case-study {
-  padding: 30px 0; }
+  padding: 0 5%; }
   .case-study .study {
     border-radius: 5px;
     -webkit-background-clip: padding-box;
@@ -2515,11 +2608,45 @@ footer {
         margin-right: 0; }
       .case-study .mini-studies li img {
         float: left;
-        margin-right: 30px; }
+        margin-right: 3.03030303%;
+        /* 30/990 */
+        width: 25.80645161%; }
       .case-study .mini-studies li p {
         float: right;
         width: 64.51612903%;
         /* 200/310 */ }
+  @media screen and (max-width: 800px) {
+    .case-study .study,
+    .case-study .mini-studies li {
+      float: none;
+      margin: 0 0 50px 0;
+      width: 100%; }
+      .case-study .study:before, .case-study .study:after,
+      .case-study .mini-studies li:before,
+      .case-study .mini-studies li:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden; }
+      .case-study .study:after,
+      .case-study .mini-studies li:after {
+        clear: both; }
+      .case-study .study br,
+      .case-study .mini-studies li br {
+        display: none; } }
+  .case-study .mini-studies li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 0;
+    padding: 30px 0; }
+    .case-study .mini-studies li:first-of-type {
+      padding-top: 0; }
+    .case-study .mini-studies li:last-of-type {
+      padding-bottom: 0;
+      border-bottom: none; }
+    .case-study .mini-studies li img {
+      width: 11.17318436%; }
+    .case-study .mini-studies li p {
+      width: 84.63687151%; }
 
 .press {
   padding: 0 5%;
