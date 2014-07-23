@@ -1999,6 +1999,11 @@ footer {
     padding: 50px 50px 30px 50px;
     width: 48.48484848%;
     /* 480/990 */ }
+    @media screen and (max-width: 770px) {
+      .demo-main form {
+        float: none;
+        margin-bottom: 30px;
+        width: 100%; } }
   .demo-main label {
     display: block;
     margin-bottom: 10px; }
@@ -2075,11 +2080,18 @@ footer {
     padding: 5px;
     float: right;
     width: 42%; }
+  @media screen and (max-width: 770px) {
+    .form-info {
+      float: none;
+      width: 100%; }
+      .form-info .client-quote,
+      .form-info .video-module {
+        padding: 50px; } }
 
 .demo-faq {
+  padding: 0 5%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 20px 0 0 0; }
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
   .demo-faq .container {
     padding-bottom: 0; }
   .demo-faq ul {
@@ -2092,6 +2104,17 @@ footer {
     column-count: 2;
     column-gap: 1.875em;
     column-fill: auto; }
+    @media screen and (max-width: 770px) {
+      .demo-faq ul {
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0;
+        -webkit-column-fill: auto;
+        -moz-column-count: 1;
+        -moz-column-gap: 0;
+        -moz-column-fill: auto;
+        column-count: 1;
+        column-gap: 0;
+        column-fill: auto; } }
   .demo-faq h4 {
     margin-bottom: 20px; }
   .demo-faq li {

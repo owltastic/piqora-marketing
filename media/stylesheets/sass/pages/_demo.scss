@@ -21,6 +21,12 @@
     	float: left;
     	padding: 50px 50px 30px 50px; 
     	width: 48.48484848%; /* 480/990 */
+
+        @media screen and (max-width:770px) {
+            float: none;
+            margin-bottom: 30px;
+            width: 100%;
+        }
     }
 
     label {
@@ -117,12 +123,22 @@
 			width: 42%;
 		}
 	}
+
+    @media screen and (max-width:770px) {
+        float: none;
+        width: 100%;
+
+        .client-quote,
+        .video-module {
+            padding: 50px;
+        }
+    }
 }
 
 .demo-faq {
+    @include outerContainer;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	border-top: 1px solid rgba(0,0,0,.1);
-	padding: 20px 0 0 0;
 
 	.container {
 		padding-bottom: 0;
@@ -130,6 +146,10 @@
 	
 	ul {
 		@include columnLayout(2,1.875em,auto);
+
+        @media screen and (max-width:770px) {
+            @include columnLayout(1,0,auto);
+        }
 	}
 
 	h4 {
