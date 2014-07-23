@@ -5,13 +5,17 @@
 	}
 
 	.product-banner {
-		background: #f8f6f5 url(../img/banner-bg-why-piqora.png) no-repeat bottom right;
+		background: #f8f6f5 url(../img/banner-bg-why-piqora.jpg) no-repeat bottom right;
 	    background-size: auto 100%;
 	    padding-bottom: 70px;
 
 	    p {
 	    	font-family: $fontSerif;
 	    	width: 41.41414141%;
+	    }
+
+	    @media screen and (min-width: 1300px) {
+	    	background-size: auto 120%;
 	    }
 	}
 
@@ -30,6 +34,7 @@
 }
 
 .our-approach {
+	@include outerContainer;
 	p {
 		margin: 0 auto;
 		width: 70%;
@@ -37,7 +42,8 @@
 }
 
 .our-product {
-	background: #fff url(../img/bg-most-actionable.png) no-repeat bottom left;
+	@include outerContainer;
+	background: #fff url(../img/bg-most-actionable.png) no-repeat top left;
     background-size: auto 100%;
 
     .feature-content {
@@ -52,9 +58,14 @@
     p {
     	font-family: $fontSans;
     }
+
+    @media screen and (min-width: 1200px) {
+    	background-size: auto 180%;
+    }
 }
 
 .our-technology {
+	@include outerContainer;
 	background: #fff url(../img/bg-our-technology.jpg) no-repeat bottom left;
 	background-size: cover;
 	border-top: 1px solid rgba(0,0,0,.25);
@@ -78,15 +89,22 @@
 }
 
 .our-experience {
-	background: #fff url(../img/bg-our-experience.png) no-repeat bottom right;
+	@include outerContainer;
+	background: #fff url(../img/bg-our-experience.png) no-repeat top right;
 	background-size: auto 100%;
 
 	.feature-content {
 		width: 51.51515152%; /* 510/990 */
 	}
+
+
+	@media screen and (min-width: 1200px) {
+    	background-size: auto 120%;
+    }
 }
 
 .our-customers {
+	@include outerContainer;
 	p {
 		float: left;
 		margin-top: 50px;
@@ -100,7 +118,8 @@
 }
 
 .our-team {
-	background: url(../img/bg-our-team.png) no-repeat bottom right;
+	@include outerContainer;
+	background: url(../img/bg-our-team.png) no-repeat top right;
 	background-size: auto 100%;
 
 	.feature-content {
@@ -110,9 +129,14 @@
 	p {
 		margin-bottom: 30px;
 	}
+
+	@media screen and (min-width: 1200px) {
+    	background-size: auto 110%;
+    }
 }
 
 .our-culture {
+	@include outerContainer;
 	border-top: 1px solid rgba(0,0,0,.1);
 	
 	h3 {
@@ -148,6 +172,7 @@
 }
 
 .our-mission {
+	@include outerContainer;
 	.feature-content {
 		float: left;
 		width: 41.41414141%; /* 410/990 */
@@ -188,6 +213,7 @@
 
 
 .something-else {
+	@include outerContainer;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 
 	.emphasized {

@@ -2134,12 +2134,15 @@ footer {
 .why-piqora .container {
   padding: 70px 0; }
 .why-piqora .product-banner {
-  background: #f8f6f5 url(../img/banner-bg-why-piqora.png) no-repeat bottom right;
+  background: #f8f6f5 url(../img/banner-bg-why-piqora.jpg) no-repeat bottom right;
   background-size: auto 100%;
   padding-bottom: 70px; }
   .why-piqora .product-banner p {
     font-family: Bitter, Georgia, serif;
     width: 41.41414141%; }
+  @media screen and (min-width: 1300px) {
+    .why-piqora .product-banner {
+      background-size: auto 120%; } }
 .why-piqora p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px; }
@@ -2149,12 +2152,15 @@ footer {
     line-height: 1.6em;
     margin-bottom: 30px; }
 
-.our-approach p {
-  margin: 0 auto;
-  width: 70%; }
+.our-approach {
+  padding: 0 5%; }
+  .our-approach p {
+    margin: 0 auto;
+    width: 70%; }
 
 .our-product {
-  background: white url(../img/bg-most-actionable.png) no-repeat bottom left;
+  padding: 0 5%;
+  background: white url(../img/bg-most-actionable.png) no-repeat top left;
   background-size: auto 100%; }
   .our-product .feature-content {
     float: right;
@@ -2163,8 +2169,12 @@ footer {
     margin-bottom: 30px; }
   .our-product p {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media screen and (min-width: 1200px) {
+    .our-product {
+      background-size: auto 180%; } }
 
 .our-technology {
+  padding: 0 5%;
   background: white url(../img/bg-our-technology.jpg) no-repeat bottom left;
   background-size: cover;
   border-top: 1px solid rgba(0, 0, 0, 0.25);
@@ -2183,30 +2193,41 @@ footer {
       width: auto; }
 
 .our-experience {
-  background: white url(../img/bg-our-experience.png) no-repeat bottom right;
+  padding: 0 5%;
+  background: white url(../img/bg-our-experience.png) no-repeat top right;
   background-size: auto 100%; }
   .our-experience .feature-content {
     width: 51.51515152%;
     /* 510/990 */ }
+  @media screen and (min-width: 1200px) {
+    .our-experience {
+      background-size: auto 120%; } }
 
-.our-customers p {
-  float: left;
-  margin-top: 50px;
-  width: 44.44444444%; }
-.our-customers img {
-  margin-top: 80px;
-  float: right; }
+.our-customers {
+  padding: 0 5%; }
+  .our-customers p {
+    float: left;
+    margin-top: 50px;
+    width: 44.44444444%; }
+  .our-customers img {
+    margin-top: 80px;
+    float: right; }
 
 .our-team {
-  background: url(../img/bg-our-team.png) no-repeat bottom right;
+  padding: 0 5%;
+  background: url(../img/bg-our-team.png) no-repeat top right;
   background-size: auto 100%; }
   .our-team .feature-content {
     width: 58.58585859%;
     /* 580/990 */ }
   .our-team p {
     margin-bottom: 30px; }
+  @media screen and (min-width: 1200px) {
+    .our-team {
+      background-size: auto 110%; } }
 
 .our-culture {
+  padding: 0 5%;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
   .our-culture h3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -2231,33 +2252,36 @@ footer {
       font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.5em; }
 
-.our-mission .feature-content {
-  float: left;
-  width: 41.41414141%;
-  /* 410/990 */ }
-.our-mission .mission-proof {
-  float: right;
-  width: 48.48484848%;
-  /* 480/990 */ }
-  .our-mission .mission-proof h4 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .our-mission .mission-proof h4, .our-mission .mission-proof .emphasized {
-    color: #395258;
-    font-size: 20px; }
-  .our-mission .mission-proof .emphasized {
-    padding-top: 10px;
-    text-align: right; }
-  .our-mission .mission-proof li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-family: Bitter, Georgia, serif;
+.our-mission {
+  padding: 0 5%; }
+  .our-mission .feature-content {
     float: left;
-    font-size: 20px;
-    width: 50%; }
-    .our-mission .mission-proof li a {
-      display: block;
-      padding: 10px 0; }
+    width: 41.41414141%;
+    /* 410/990 */ }
+  .our-mission .mission-proof {
+    float: right;
+    width: 48.48484848%;
+    /* 480/990 */ }
+    .our-mission .mission-proof h4 {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .our-mission .mission-proof h4, .our-mission .mission-proof .emphasized {
+      color: #395258;
+      font-size: 20px; }
+    .our-mission .mission-proof .emphasized {
+      padding-top: 10px;
+      text-align: right; }
+    .our-mission .mission-proof li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      font-family: Bitter, Georgia, serif;
+      float: left;
+      font-size: 20px;
+      width: 50%; }
+      .our-mission .mission-proof li a {
+        display: block;
+        padding: 10px 0; }
 
 .something-else {
+  padding: 0 5%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .something-else .emphasized {
     margin: 0 auto;
