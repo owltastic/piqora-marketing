@@ -1,6 +1,6 @@
 .press {
     @include outerContainer;
-    background: url(../img/banner-bg-press.png) no-repeat right bottom; 
+    background: #f8f6f5 url(../img/banner-bg-press.png) no-repeat right bottom; 
     background-size: auto 100%;
     border-bottom: 1px solid $colorBorders;	
 
@@ -14,6 +14,7 @@
 }
 
 .press-timeline {
+	@include outerContainer;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 
 	.container {
@@ -42,6 +43,10 @@
 		&:last-of-type {
 			padding-bottom: 30px;
 		}
+
+		@media screen and (max-width: 630px) {
+			@include columnLayout(1,0,auto);
+		}
 	}
 
 	li {
@@ -55,6 +60,10 @@
     	h4 {
     		line-height: 1.4em;
     		margin: 5px 0 15px 0;
+    	}
+
+    	img {
+    		max-width: 100%;
     	}
 
     	p {
