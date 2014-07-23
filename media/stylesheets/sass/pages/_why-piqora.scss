@@ -208,6 +208,10 @@
 
 	.feature-content {
 		width: 58.58585859%; /* 580/990 */
+
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
 	}
 
 	p {
@@ -217,6 +221,19 @@
 	@media screen and (min-width: 1200px) {
     	background-size: auto 110%;
     }
+
+    @media screen and (max-width: 950px) {
+		background-size: auto 80%;
+	}
+
+	@media screen and (max-width: 880px) {
+		background-size: auto 60%;
+	}
+
+	@media screen and (max-width: 700px) {
+		background: url(../img/bg-our-team-small.png) no-repeat right top;
+		background-size: auto 100%;
+	}
 }
 
 .our-culture {
@@ -251,6 +268,30 @@
 		p {
 			font-family: $fontSans;
 			line-height: 1.5em;
+		}
+
+		@media screen and (max-width: 930px) {
+			@include clear;
+			float: none;
+			width: 100%;
+			margin: 0 0 50px 0;
+
+			img {
+				float: left;
+				width: 45%;
+			}
+
+			p {
+				float: right;
+				width: 50%;
+			}
+		}
+
+		@media screen and (max-width: 615px) {
+			img, p {
+				float: none;
+				width: 100%;
+			}
 		}
 	}
 }

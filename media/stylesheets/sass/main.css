@@ -2285,11 +2285,24 @@ footer {
   .our-team .feature-content {
     width: 58.58585859%;
     /* 580/990 */ }
+    @media screen and (max-width: 700px) {
+      .our-team .feature-content {
+        width: 100%; } }
   .our-team p {
     margin-bottom: 30px; }
   @media screen and (min-width: 1200px) {
     .our-team {
       background-size: auto 110%; } }
+  @media screen and (max-width: 950px) {
+    .our-team {
+      background-size: auto 80%; } }
+  @media screen and (max-width: 880px) {
+    .our-team {
+      background-size: auto 60%; } }
+  @media screen and (max-width: 700px) {
+    .our-team {
+      background: url(../img/bg-our-team-small.png) no-repeat right top;
+      background-size: auto 100%; } }
 
 .our-culture {
   padding: 0 5%;
@@ -2316,6 +2329,28 @@ footer {
     .our-culture .culture-fact p {
       font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1.5em; }
+    @media screen and (max-width: 930px) {
+      .our-culture .culture-fact {
+        float: none;
+        width: 100%;
+        margin: 0 0 50px 0; }
+        .our-culture .culture-fact:before, .our-culture .culture-fact:after {
+          content: "\0020";
+          display: block;
+          height: 0;
+          overflow: hidden; }
+        .our-culture .culture-fact:after {
+          clear: both; }
+        .our-culture .culture-fact img {
+          float: left;
+          width: 45%; }
+        .our-culture .culture-fact p {
+          float: right;
+          width: 50%; } }
+    @media screen and (max-width: 615px) {
+      .our-culture .culture-fact img, .our-culture .culture-fact p {
+        float: none;
+        width: 100%; } }
 
 .our-mission {
   padding: 0 5%; }
