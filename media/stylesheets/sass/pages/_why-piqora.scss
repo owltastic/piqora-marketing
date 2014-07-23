@@ -334,6 +334,18 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 830px) {
+		.feature-content,
+		.mission-proof {
+			float: none;
+			width: 100%;
+		}
+
+		.mission-proof {
+			margin-top: 50px;
+		}
+	}
 }
 
 
