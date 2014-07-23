@@ -2190,10 +2190,10 @@ footer {
   @media screen and (min-width: 1200px) {
     .our-product {
       background-size: auto 180%; } }
-  @media screen and (max-width: 1050px) and (min-width: 1200px) {
+  @media screen and (min-width: 1050px) and (max-width: 1200px) {
     .our-product {
       background-size: auto 140%; } }
-  @media screen and (min-width: 950px) and (min-width: 1050px) {
+  @media screen and (min-width: 950px) and (max-width: 1050px) {
     .our-product {
       background-size: auto 120%; } }
   @media screen and (max-width: 810px) {

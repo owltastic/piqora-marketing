@@ -86,11 +86,11 @@
     	background-size: auto 180%;
     }
 
-    @media screen and (max-width: 1050px) and (min-width: 1200px) {
+    @media screen and (min-width: 1050px) and (max-width: 1200px) {
     	background-size: auto 140%;
     }
 
-    @media screen and (min-width: 950px) and (min-width: 1050px) {
+    @media screen and (min-width: 950px) and (max-width: 1050px) {
     	background-size: auto 120%;
     }
 
