@@ -2238,9 +2238,19 @@ footer {
   .our-experience .feature-content {
     width: 51.51515152%;
     /* 510/990 */ }
+    @media screen and (max-width: 805px) {
+      .our-experience .feature-content {
+        width: 100%; } }
   @media screen and (min-width: 1200px) {
     .our-experience {
       background-size: auto 120%; } }
+  @media screen and (max-width: 970px) {
+    .our-experience {
+      background-size: auto 70%; } }
+  @media screen and (max-width: 805px) {
+    .our-experience {
+      background: white url(../img/bg-our-experience-small.png) no-repeat top right;
+      background-size: auto 100%; } }
 
 .our-customers {
   padding: 0 5%; }
@@ -2248,9 +2258,25 @@ footer {
     float: left;
     margin-top: 50px;
     width: 44.44444444%; }
+    @media screen and (max-width: 705px) {
+      .our-customers p {
+        float: none;
+        text-align: center;
+        width: 100%; } }
   .our-customers img {
     margin-top: 80px;
-    float: right; }
+    float: right;
+    width: 48.78787879%; }
+    @media screen and (max-width: 705px) {
+      .our-customers img {
+        display: block;
+        float: none;
+        margin: 80px auto 0 auto;
+        width: 76.06299213%;
+        /* 483/635 */ } }
+    @media screen and (max-width: 540px) {
+      .our-customers img {
+        width: 100%; } }
 
 .our-team {
   padding: 0 5%;
