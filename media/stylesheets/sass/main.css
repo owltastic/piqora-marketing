@@ -2731,6 +2731,12 @@ footer {
     margin-bottom: 30px; }
   .team p {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media screen and (min-width: 1100px) {
+    .team {
+      background-size: auto 150%; } }
+  @media screen and (max-width: 620px) {
+    .team .description {
+      width: 100%; } }
 
 .jobs-cta {
   padding: 0 5%;
