@@ -551,6 +551,7 @@
 
     .container {
         padding-bottom: 0;
+        max-width: 998px;
     }
 
     .screenshots-icon {
@@ -564,6 +565,7 @@
     .screenshots {
         img {
            margin: 30px 0 0 -4px;
+           width: 100%;
         }
     }
 }
