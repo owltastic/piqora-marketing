@@ -1669,7 +1669,7 @@ footer {
       .product-banner.instagram-banner .product-steps a:hover span {
         background: #fff; }
   .product-banner.tumblr-banner {
-    background: url(../img/banner-bg-tumblr.jpg) no-repeat 50% bottom;
+    background: url(../img/banner-bg-tumblr.jpg) no-repeat 50% top;
     background-size: auto 100%; }
     @media screen and (min-width: 1225px) {
       .product-banner.tumblr-banner {
@@ -1682,6 +1682,8 @@ footer {
     .product-banner.tumblr-banner .banner-description {
       width: 65.65656566%;
       /* 650/990 */ }
+      .product-banner.tumblr-banner .banner-description p {
+        color: rgba(0, 0, 0, 0.5); }
       @media screen and (max-width: 895px) {
         .product-banner.tumblr-banner .banner-description {
           width: 80%; } }
